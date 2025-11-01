@@ -1,0 +1,1001 @@
+restaurant_id;restaurant_name;city;avg_rating;total_ratings;food_type;avg_delivery_time;avg_price
+1;Restaurante 1;Porto Alegre;3,1;626;Brasileira;37;34,95
+2;Restaurante 2;Brasilia;3,5;732;Italiana;38;61,89
+3;Restaurante 3;Sao Paulo;3,6;189;Brasileira;43;28,54
+4;Restaurante 4;Rio de Janeiro;3,4;734;Pizza;44;63,64
+5;Restaurante 5;Rio de Janeiro;3,3;236;Brasileira;45;51,15
+6;Restaurante 6;Sao Paulo;3,9;501;Hamburguer;46;69,34
+7;Restaurante 7;Belo Horizonte;3,1;599;Italiana;27;60,51
+8;Restaurante 8;Belo Horizonte;3,1;253;Pizza;26;31,60
+9;Restaurante 9;Belo Horizonte;3,7;571;Pizza;21;65,02
+10;Restaurante 10;Sao Paulo;4,4;1007;Hamburguer;46;25,27
+11;Restaurante 11;Belo Horizonte;4,7;288;Japonesa;33;29,14
+12;Restaurante 12;Rio de Janeiro;3,6;776;Pizza;45;56,36
+13;Restaurante 13;Porto Alegre;4,9;860;Brasileira;28;63,27
+14;Restaurante 14;Brasilia;3,1;680;Pizza;30;74,18
+15;Restaurante 15;Sao Paulo;3,8;228;Japonesa;48;63,73
+16;Restaurante 16;Porto Alegre;3,7;1028;Brasileira;26;58,91
+17;Restaurante 17;Belo Horizonte;3,3;177;Hamburguer;29;31,40
+18;Restaurante 18;Rio de Janeiro;3,9;515;Pizza;31;68,91
+19;Restaurante 19;Sao Paulo;3,6;976;Brasileira;33;59,64
+20;Restaurante 20;Porto Alegre;4,4;211;Brasileira;32;45,10
+21;Restaurante 21;Brasilia;3,4;296;Pizza;41;44,94
+22;Restaurante 22;Brasilia;4,2;628;Brasileira;35;31,86
+23;Restaurante 23;Rio de Janeiro;4,8;1031;Brasileira;35;36,07
+24;Restaurante 24;Sao Paulo;4,3;1003;Brasileira;44;36,47
+25;Restaurante 25;Porto Alegre;4,0;427;Brasileira;40;50,02
+26;Restaurante 26;Belo Horizonte;4,8;263;Brasileira;37;61,79
+27;Restaurante 27;Sao Paulo;4,1;1060;Pizza;33;45,61
+28;Restaurante 28;Porto Alegre;3,8;278;Hamburguer;49;59,14
+29;Restaurante 29;Porto Alegre;4,5;912;Italiana;33;58,08
+30;Restaurante 30;Belo Horizonte;3,4;688;Pizza;39;61,02
+31;Restaurante 31;Sao Paulo;4,1;757;Japonesa;38;60,45
+32;Restaurante 32;Sao Paulo;4,6;274;Pizza;48;65,67
+33;Restaurante 33;Sao Paulo;4,6;986;Pizza;29;29,97
+34;Restaurante 34;Rio de Janeiro;4,0;1083;Pizza;47;58,18
+35;Restaurante 35;Porto Alegre;3,4;1077;Japonesa;22;60,50
+36;Restaurante 36;Belo Horizonte;4,4;186;Japonesa;29;64,97
+37;Restaurante 37;Brasilia;3,7;901;Italiana;24;74,18
+38;Restaurante 38;Rio de Janeiro;3,3;893;Italiana;48;51,51
+39;Restaurante 39;Sao Paulo;4,5;945;Japonesa;46;48,12
+40;Restaurante 40;Porto Alegre;4,9;1090;Hamburguer;31;35,14
+41;Restaurante 41;Belo Horizonte;5,0;478;Japonesa;39;34,46
+42;Restaurante 42;Brasilia;4,2;705;Italiana;42;47,61
+43;Restaurante 43;Belo Horizonte;4,1;803;Japonesa;43;64,71
+44;Restaurante 44;Brasilia;4,9;471;Hamburguer;27;44,45
+45;Restaurante 45;Belo Horizonte;4,4;895;Japonesa;38;41,56
+46;Restaurante 46;Belo Horizonte;3,3;131;Italiana;36;70,71
+47;Restaurante 47;Belo Horizonte;4,9;225;Pizza;26;34,03
+48;Restaurante 48;Brasilia;4,6;899;Pizza;25;55,16
+49;Restaurante 49;Belo Horizonte;3,3;1086;Italiana;39;54,34
+50;Restaurante 50;Rio de Janeiro;4,0;495;Pizza;44;67,47
+51;Restaurante 51;Porto Alegre;3,4;901;Hamburguer;22;57,22
+52;Restaurante 52;Belo Horizonte;3,5;732;Pizza;40;35,51
+53;Restaurante 53;Porto Alegre;4,5;494;Brasileira;45;65,07
+54;Restaurante 54;Porto Alegre;3,3;353;Pizza;21;32,28
+55;Restaurante 55;Brasilia;4,4;733;Japonesa;47;34,70
+56;Restaurante 56;Brasilia;4,9;661;Brasileira;34;54,60
+57;Restaurante 57;Brasilia;4,0;955;Brasileira;39;44,05
+58;Restaurante 58;Belo Horizonte;4,3;765;Italiana;20;28,05
+59;Restaurante 59;Porto Alegre;4,3;908;Pizza;48;39,69
+60;Restaurante 60;Rio de Janeiro;4,1;522;Hamburguer;35;35,33
+61;Restaurante 61;Sao Paulo;3,4;593;Hamburguer;45;48,39
+62;Restaurante 62;Porto Alegre;4,9;920;Italiana;29;27,51
+63;Restaurante 63;Rio de Janeiro;3,4;599;Italiana;22;68,59
+64;Restaurante 64;Brasilia;4,0;423;Brasileira;22;40,34
+65;Restaurante 65;Porto Alegre;3,6;316;Italiana;33;70,14
+66;Restaurante 66;Porto Alegre;3,3;285;Japonesa;29;50,06
+67;Restaurante 67;Porto Alegre;3,4;1000;Hamburguer;46;43,07
+68;Restaurante 68;Sao Paulo;3,1;256;Brasileira;44;65,96
+69;Restaurante 69;Brasilia;3,4;497;Pizza;35;48,68
+70;Restaurante 70;Sao Paulo;4,4;983;Pizza;21;69,07
+71;Restaurante 71;Rio de Janeiro;3,9;877;Brasileira;39;38,93
+72;Restaurante 72;Belo Horizonte;3,7;105;Brasileira;31;69,18
+73;Restaurante 73;Brasilia;4,1;658;Pizza;34;72,25
+74;Restaurante 74;Rio de Janeiro;4,4;997;Hamburguer;44;64,73
+75;Restaurante 75;Sao Paulo;3,5;560;Japonesa;29;66,71
+76;Restaurante 76;Brasilia;4,5;575;Brasileira;41;52,58
+77;Restaurante 77;Brasilia;3,5;773;Hamburguer;43;43,89
+78;Restaurante 78;Brasilia;3,0;360;Hamburguer;27;47,35
+79;Restaurante 79;Porto Alegre;3,9;751;Pizza;21;29,10
+80;Restaurante 80;Rio de Janeiro;3,2;253;Pizza;40;32,30
+81;Restaurante 81;Sao Paulo;3,4;733;Hamburguer;24;36,55
+82;Restaurante 82;Brasilia;3,6;821;Italiana;47;26,29
+83;Restaurante 83;Rio de Janeiro;3,9;1069;Brasileira;20;30,02
+84;Restaurante 84;Porto Alegre;3,5;375;Pizza;39;64,07
+85;Restaurante 85;Brasilia;4,2;430;Pizza;47;62,47
+86;Restaurante 86;Brasilia;4,5;384;Italiana;31;49,23
+87;Restaurante 87;Rio de Janeiro;4,9;758;Japonesa;37;60,52
+88;Restaurante 88;Belo Horizonte;4,2;289;Brasileira;47;52,13
+89;Restaurante 89;Brasilia;3,7;252;Italiana;24;31,82
+90;Restaurante 90;Brasilia;4,8;902;Pizza;21;37,10
+91;Restaurante 91;Belo Horizonte;4,6;198;Japonesa;25;36,48
+92;Restaurante 92;Porto Alegre;4,7;399;Pizza;28;66,27
+93;Restaurante 93;Belo Horizonte;4,4;652;Pizza;40;25,61
+94;Restaurante 94;Belo Horizonte;4,9;962;Pizza;44;39,40
+95;Restaurante 95;Belo Horizonte;4,9;106;Japonesa;28;62,95
+96;Restaurante 96;Belo Horizonte;4,4;445;Pizza;36;41,82
+97;Restaurante 97;Sao Paulo;3,4;664;Brasileira;26;57,84
+98;Restaurante 98;Sao Paulo;4,2;120;Japonesa;41;35,13
+99;Restaurante 99;Belo Horizonte;3,4;765;Pizza;39;50,35
+100;Restaurante 100;Brasilia;4,8;152;Hamburguer;41;37,64
+101;Restaurante 101;Sao Paulo;4,6;206;Hamburguer;32;51,94
+102;Restaurante 102;Brasilia;4,6;892;Japonesa;24;54,14
+103;Restaurante 103;Brasilia;3,2;370;Brasileira;33;57,39
+104;Restaurante 104;Belo Horizonte;3,3;843;Brasileira;38;27,15
+105;Restaurante 105;Belo Horizonte;3,7;729;Italiana;42;56,43
+106;Restaurante 106;Sao Paulo;4,1;218;Italiana;48;44,05
+107;Restaurante 107;Sao Paulo;4,5;815;Italiana;49;35,74
+108;Restaurante 108;Sao Paulo;3,8;201;Japonesa;24;47,37
+109;Restaurante 109;Belo Horizonte;3,3;597;Italiana;25;74,84
+110;Restaurante 110;Sao Paulo;3,5;799;Italiana;29;57,63
+111;Restaurante 111;Brasilia;4,2;695;Pizza;20;51,46
+112;Restaurante 112;Rio de Janeiro;4,9;1000;Pizza;25;30,93
+113;Restaurante 113;Sao Paulo;4,4;118;Italiana;37;34,92
+114;Restaurante 114;Sao Paulo;3,1;197;Brasileira;33;35,75
+115;Restaurante 115;Rio de Janeiro;3,6;999;Italiana;42;58,21
+116;Restaurante 116;Brasilia;4,7;324;Japonesa;49;46,13
+117;Restaurante 117;Rio de Janeiro;3,1;1000;Italiana;27;72,10
+118;Restaurante 118;Porto Alegre;3,8;282;Hamburguer;34;60,75
+119;Restaurante 119;Sao Paulo;3,6;665;Italiana;40;47,20
+120;Restaurante 120;Brasilia;3,9;631;Pizza;23;69,97
+121;Restaurante 121;Sao Paulo;4,9;168;Japonesa;30;52,16
+122;Restaurante 122;Belo Horizonte;4,4;561;Pizza;22;55,42
+123;Restaurante 123;Sao Paulo;4,8;475;Pizza;48;48,90
+124;Restaurante 124;Rio de Janeiro;3,2;334;Brasileira;47;69,21
+125;Restaurante 125;Belo Horizonte;4,0;944;Pizza;26;58,21
+126;Restaurante 126;Brasilia;4,5;262;Brasileira;30;52,38
+127;Restaurante 127;Belo Horizonte;4,7;975;Brasileira;24;61,49
+128;Restaurante 128;Rio de Janeiro;4,1;678;Hamburguer;32;64,46
+129;Restaurante 129;Porto Alegre;4,8;246;Brasileira;44;66,95
+130;Restaurante 130;Porto Alegre;5,0;181;Hamburguer;46;59,07
+131;Restaurante 131;Rio de Janeiro;5,0;163;Pizza;22;31,13
+132;Restaurante 132;Sao Paulo;3,2;298;Pizza;33;52,21
+133;Restaurante 133;Brasilia;4,6;957;Pizza;38;39,08
+134;Restaurante 134;Porto Alegre;4,8;826;Hamburguer;45;43,17
+135;Restaurante 135;Belo Horizonte;3,6;1074;Brasileira;24;58,90
+136;Restaurante 136;Brasilia;3,6;750;Japonesa;32;59,92
+137;Restaurante 137;Rio de Janeiro;4,9;1089;Brasileira;38;49,10
+138;Restaurante 138;Porto Alegre;4,9;778;Brasileira;32;63,59
+139;Restaurante 139;Porto Alegre;3,6;368;Pizza;49;59,54
+140;Restaurante 140;Brasilia;3,3;998;Pizza;44;59,16
+141;Restaurante 141;Belo Horizonte;4,2;590;Japonesa;48;29,26
+142;Restaurante 142;Sao Paulo;3,8;176;Brasileira;48;71,90
+143;Restaurante 143;Rio de Janeiro;3,0;122;Italiana;43;47,00
+144;Restaurante 144;Brasilia;3,4;110;Pizza;30;61,62
+145;Restaurante 145;Brasilia;3,8;641;Italiana;26;52,85
+146;Restaurante 146;Porto Alegre;3,7;312;Brasileira;38;59,32
+147;Restaurante 147;Rio de Janeiro;4,0;370;Italiana;29;71,65
+148;Restaurante 148;Rio de Janeiro;4,7;210;Japonesa;29;73,29
+149;Restaurante 149;Porto Alegre;3,4;836;Pizza;21;31,69
+150;Restaurante 150;Belo Horizonte;3,2;109;Italiana;38;74,22
+151;Restaurante 151;Sao Paulo;4,3;454;Italiana;48;34,31
+152;Restaurante 152;Rio de Janeiro;4,5;1047;Italiana;20;31,50
+153;Restaurante 153;Sao Paulo;4,2;565;Hamburguer;47;52,91
+154;Restaurante 154;Brasilia;4,7;822;Hamburguer;45;35,07
+155;Restaurante 155;Porto Alegre;4,5;465;Hamburguer;39;52,02
+156;Restaurante 156;Belo Horizonte;3,4;1056;Pizza;26;50,10
+157;Restaurante 157;Sao Paulo;4,9;567;Pizza;23;29,95
+158;Restaurante 158;Porto Alegre;3,1;796;Japonesa;48;63,97
+159;Restaurante 159;Porto Alegre;3,6;903;Brasileira;49;50,59
+160;Restaurante 160;Porto Alegre;4,9;1097;Pizza;20;47,57
+161;Restaurante 161;Sao Paulo;4,6;854;Hamburguer;26;42,90
+162;Restaurante 162;Belo Horizonte;4,2;108;Pizza;30;65,65
+163;Restaurante 163;Belo Horizonte;4,3;676;Italiana;38;58,84
+164;Restaurante 164;Brasilia;4,7;390;Japonesa;44;33,12
+165;Restaurante 165;Brasilia;3,1;886;Pizza;21;42,98
+166;Restaurante 166;Sao Paulo;4,7;379;Brasileira;20;26,98
+167;Restaurante 167;Brasilia;3,9;252;Hamburguer;29;29,71
+168;Restaurante 168;Porto Alegre;4,1;771;Japonesa;41;25,88
+169;Restaurante 169;Sao Paulo;4,6;924;Italiana;41;46,37
+170;Restaurante 170;Belo Horizonte;4,7;1044;Pizza;42;61,98
+171;Restaurante 171;Brasilia;3,9;1027;Brasileira;35;63,02
+172;Restaurante 172;Brasilia;4,5;388;Italiana;32;32,03
+173;Restaurante 173;Belo Horizonte;3,8;690;Pizza;32;42,29
+174;Restaurante 174;Porto Alegre;4,7;275;Brasileira;27;27,37
+175;Restaurante 175;Brasilia;3,5;326;Hamburguer;26;55,06
+176;Restaurante 176;Brasilia;5,0;422;Hamburguer;21;54,93
+177;Restaurante 177;Brasilia;3,8;1046;Brasileira;29;40,28
+178;Restaurante 178;Brasilia;3,4;724;Brasileira;43;33,60
+179;Restaurante 179;Belo Horizonte;4,1;376;Italiana;49;49,86
+180;Restaurante 180;Rio de Janeiro;3,1;1059;Brasileira;45;63,34
+181;Restaurante 181;Brasilia;3,2;490;Brasileira;47;31,78
+182;Restaurante 182;Belo Horizonte;4,7;251;Pizza;24;26,37
+183;Restaurante 183;Rio de Janeiro;3,1;565;Italiana;42;67,35
+184;Restaurante 184;Belo Horizonte;3,0;1033;Brasileira;24;42,56
+185;Restaurante 185;Rio de Janeiro;3,4;212;Japonesa;32;40,97
+186;Restaurante 186;Porto Alegre;4,5;660;Pizza;26;63,71
+187;Restaurante 187;Porto Alegre;4,8;265;Pizza;30;33,10
+188;Restaurante 188;Rio de Janeiro;5,0;651;Pizza;24;53,61
+189;Restaurante 189;Porto Alegre;4,3;264;Hamburguer;21;39,86
+190;Restaurante 190;Belo Horizonte;3,1;660;Japonesa;39;63,55
+191;Restaurante 191;Brasilia;3,8;1048;Hamburguer;41;35,00
+192;Restaurante 192;Sao Paulo;3,6;909;Brasileira;44;25,42
+193;Restaurante 193;Belo Horizonte;4,7;448;Pizza;20;52,65
+194;Restaurante 194;Sao Paulo;4,0;702;Italiana;48;46,75
+195;Restaurante 195;Rio de Janeiro;3,5;822;Italiana;43;31,56
+196;Restaurante 196;Porto Alegre;3,9;396;Pizza;41;55,04
+197;Restaurante 197;Belo Horizonte;4,9;633;Hamburguer;20;74,30
+198;Restaurante 198;Rio de Janeiro;3,3;877;Japonesa;45;50,71
+199;Restaurante 199;Belo Horizonte;4,3;840;Italiana;47;37,03
+200;Restaurante 200;Sao Paulo;4,1;458;Japonesa;39;40,85
+201;Restaurante 201;Brasilia;3,9;200;Japonesa;35;28,41
+202;Restaurante 202;Rio de Janeiro;3,8;455;Italiana;33;38,42
+203;Restaurante 203;Belo Horizonte;3,4;144;Brasileira;43;58,26
+204;Restaurante 204;Belo Horizonte;3,8;333;Italiana;42;73,74
+205;Restaurante 205;Belo Horizonte;3,2;248;Pizza;37;39,37
+206;Restaurante 206;Porto Alegre;4,4;416;Hamburguer;49;28,10
+207;Restaurante 207;Brasilia;4,8;836;Brasileira;22;58,35
+208;Restaurante 208;Porto Alegre;3,8;183;Pizza;38;61,36
+209;Restaurante 209;Belo Horizonte;4,9;773;Hamburguer;24;43,69
+210;Restaurante 210;Sao Paulo;3,3;682;Pizza;43;68,25
+211;Restaurante 211;Rio de Janeiro;4,0;423;Brasileira;26;72,01
+212;Restaurante 212;Porto Alegre;4,4;638;Italiana;40;60,33
+213;Restaurante 213;Sao Paulo;4,4;547;Pizza;45;65,66
+214;Restaurante 214;Belo Horizonte;4,7;946;Pizza;24;33,27
+215;Restaurante 215;Rio de Janeiro;4,8;637;Italiana;47;47,69
+216;Restaurante 216;Belo Horizonte;3,5;1053;Japonesa;49;41,48
+217;Restaurante 217;Brasilia;3,4;190;Italiana;48;32,25
+218;Restaurante 218;Belo Horizonte;4,0;541;Japonesa;45;64,62
+219;Restaurante 219;Brasilia;4,8;395;Japonesa;32;41,52
+220;Restaurante 220;Belo Horizonte;3,7;864;Hamburguer;47;63,13
+221;Restaurante 221;Brasilia;3,7;258;Hamburguer;44;52,25
+222;Restaurante 222;Sao Paulo;3,4;422;Japonesa;31;32,36
+223;Restaurante 223;Rio de Janeiro;3,9;571;Hamburguer;33;37,92
+224;Restaurante 224;Porto Alegre;4,6;1020;Brasileira;44;27,27
+225;Restaurante 225;Belo Horizonte;3,0;212;Pizza;32;34,69
+226;Restaurante 226;Belo Horizonte;4,7;513;Japonesa;25;42,35
+227;Restaurante 227;Rio de Janeiro;3,2;755;Pizza;47;72,05
+228;Restaurante 228;Sao Paulo;4,3;499;Italiana;48;43,87
+229;Restaurante 229;Brasilia;3,8;287;Hamburguer;21;71,49
+230;Restaurante 230;Brasilia;4,7;738;Italiana;30;63,86
+231;Restaurante 231;Rio de Janeiro;4,5;390;Italiana;44;28,94
+232;Restaurante 232;Rio de Janeiro;4,6;859;Pizza;46;28,14
+233;Restaurante 233;Belo Horizonte;4,0;1022;Italiana;41;59,40
+234;Restaurante 234;Porto Alegre;5,0;117;Italiana;47;52,72
+235;Restaurante 235;Rio de Janeiro;4,5;671;Italiana;41;44,47
+236;Restaurante 236;Porto Alegre;4,7;327;Japonesa;23;55,82
+237;Restaurante 237;Rio de Janeiro;4,8;1031;Japonesa;41;36,20
+238;Restaurante 238;Sao Paulo;5,0;1031;Pizza;32;44,97
+239;Restaurante 239;Brasilia;4,1;1061;Italiana;35;33,02
+240;Restaurante 240;Brasilia;4,5;811;Japonesa;21;51,40
+241;Restaurante 241;Belo Horizonte;4,5;958;Pizza;32;56,09
+242;Restaurante 242;Rio de Janeiro;3,2;658;Japonesa;32;46,03
+243;Restaurante 243;Belo Horizonte;4,9;1025;Japonesa;40;66,91
+244;Restaurante 244;Brasilia;3,1;515;Brasileira;32;34,48
+245;Restaurante 245;Belo Horizonte;4,8;917;Brasileira;49;29,44
+246;Restaurante 246;Porto Alegre;3,7;644;Japonesa;30;40,36
+247;Restaurante 247;Brasilia;4,7;752;Italiana;23;32,65
+248;Restaurante 248;Belo Horizonte;4,7;355;Italiana;29;49,06
+249;Restaurante 249;Porto Alegre;4,2;185;Italiana;21;51,72
+250;Restaurante 250;Belo Horizonte;4,9;824;Italiana;21;46,64
+251;Restaurante 251;Belo Horizonte;3,2;855;Japonesa;41;38,84
+252;Restaurante 252;Sao Paulo;3,3;152;Brasileira;22;50,78
+253;Restaurante 253;Belo Horizonte;4,8;423;Hamburguer;45;46,73
+254;Restaurante 254;Belo Horizonte;3,5;826;Hamburguer;48;43,46
+255;Restaurante 255;Belo Horizonte;3,9;1040;Japonesa;27;50,94
+256;Restaurante 256;Sao Paulo;3,1;268;Hamburguer;30;27,33
+257;Restaurante 257;Porto Alegre;4,7;850;Brasileira;49;49,05
+258;Restaurante 258;Brasilia;4,3;550;Italiana;43;40,51
+259;Restaurante 259;Belo Horizonte;4,0;369;Brasileira;24;27,71
+260;Restaurante 260;Sao Paulo;3,7;157;Pizza;38;26,70
+261;Restaurante 261;Brasilia;4,0;790;Japonesa;26;50,79
+262;Restaurante 262;Sao Paulo;4,2;760;Brasileira;37;70,29
+263;Restaurante 263;Sao Paulo;3,7;1069;Japonesa;25;34,46
+264;Restaurante 264;Brasilia;4,7;926;Italiana;30;68,53
+265;Restaurante 265;Belo Horizonte;4,1;575;Pizza;34;37,57
+266;Restaurante 266;Rio de Janeiro;3,3;853;Brasileira;21;25,29
+267;Restaurante 267;Porto Alegre;4,5;217;Japonesa;43;58,05
+268;Restaurante 268;Sao Paulo;3,9;643;Brasileira;33;63,48
+269;Restaurante 269;Brasilia;4,3;577;Hamburguer;35;38,77
+270;Restaurante 270;Rio de Janeiro;4,0;736;Hamburguer;43;65,74
+271;Restaurante 271;Rio de Janeiro;4,3;991;Italiana;30;48,60
+272;Restaurante 272;Porto Alegre;4,0;185;Pizza;22;65,50
+273;Restaurante 273;Rio de Janeiro;4,3;488;Italiana;39;67,02
+274;Restaurante 274;Rio de Janeiro;3,9;756;Italiana;44;72,82
+275;Restaurante 275;Rio de Janeiro;3,5;316;Hamburguer;25;63,06
+276;Restaurante 276;Sao Paulo;3,1;946;Brasileira;22;32,29
+277;Restaurante 277;Porto Alegre;4,1;489;Hamburguer;45;71,99
+278;Restaurante 278;Brasilia;4,2;759;Brasileira;40;72,39
+279;Restaurante 279;Brasilia;4,2;781;Brasileira;23;35,43
+280;Restaurante 280;Brasilia;4,1;860;Pizza;46;68,54
+281;Restaurante 281;Rio de Janeiro;4,8;847;Italiana;48;33,37
+282;Restaurante 282;Belo Horizonte;4,4;1005;Brasileira;30;54,22
+283;Restaurante 283;Belo Horizonte;4,3;717;Japonesa;24;48,77
+284;Restaurante 284;Sao Paulo;3,7;273;Pizza;23;27,40
+285;Restaurante 285;Belo Horizonte;3,8;870;Italiana;41;68,18
+286;Restaurante 286;Sao Paulo;3,6;1088;Pizza;28;61,76
+287;Restaurante 287;Rio de Janeiro;4,5;432;Japonesa;43;34,05
+288;Restaurante 288;Rio de Janeiro;4,1;135;Pizza;22;44,80
+289;Restaurante 289;Brasilia;4,7;290;Japonesa;41;27,29
+290;Restaurante 290;Porto Alegre;4,9;925;Pizza;43;27,39
+291;Restaurante 291;Brasilia;4,7;194;Japonesa;26;70,61
+292;Restaurante 292;Brasilia;4,4;449;Italiana;33;31,86
+293;Restaurante 293;Brasilia;3,0;943;Hamburguer;37;56,21
+294;Restaurante 294;Belo Horizonte;4,3;481;Japonesa;32;28,17
+295;Restaurante 295;Porto Alegre;4,4;423;Hamburguer;41;63,50
+296;Restaurante 296;Belo Horizonte;4,9;811;Brasileira;41;50,26
+297;Restaurante 297;Belo Horizonte;3,6;529;Italiana;20;45,16
+298;Restaurante 298;Belo Horizonte;4,4;151;Brasileira;49;37,12
+299;Restaurante 299;Porto Alegre;3,5;228;Pizza;33;72,52
+300;Restaurante 300;Brasilia;4,8;794;Brasileira;39;45,66
+301;Restaurante 301;Brasilia;4,8;781;Italiana;44;43,35
+302;Restaurante 302;Rio de Janeiro;4,8;259;Pizza;33;44,99
+303;Restaurante 303;Belo Horizonte;4,7;795;Brasileira;37;68,06
+304;Restaurante 304;Rio de Janeiro;3,4;944;Italiana;23;64,10
+305;Restaurante 305;Rio de Janeiro;4,9;245;Japonesa;36;62,56
+306;Restaurante 306;Rio de Janeiro;3,1;1009;Italiana;43;27,58
+307;Restaurante 307;Belo Horizonte;3,5;538;Brasileira;43;38,60
+308;Restaurante 308;Belo Horizonte;3,7;691;Pizza;36;26,42
+309;Restaurante 309;Brasilia;3,7;479;Italiana;39;44,96
+310;Restaurante 310;Sao Paulo;3,1;861;Brasileira;20;33,48
+311;Restaurante 311;Belo Horizonte;3,5;444;Japonesa;33;25,14
+312;Restaurante 312;Porto Alegre;4,0;862;Brasileira;20;35,66
+313;Restaurante 313;Belo Horizonte;3,4;782;Italiana;24;70,20
+314;Restaurante 314;Rio de Janeiro;4,9;179;Hamburguer;49;67,41
+315;Restaurante 315;Sao Paulo;4,2;477;Brasileira;43;57,19
+316;Restaurante 316;Rio de Janeiro;4,7;645;Hamburguer;40;42,54
+317;Restaurante 317;Brasilia;3,2;894;Japonesa;38;26,76
+318;Restaurante 318;Rio de Janeiro;4,6;896;Brasileira;38;44,04
+319;Restaurante 319;Porto Alegre;3,6;721;Japonesa;48;65,66
+320;Restaurante 320;Rio de Janeiro;3,6;1036;Italiana;42;43,85
+321;Restaurante 321;Porto Alegre;3,4;628;Japonesa;31;72,49
+322;Restaurante 322;Rio de Janeiro;4,3;855;Hamburguer;38;37,26
+323;Restaurante 323;Rio de Janeiro;4,4;796;Brasileira;31;47,47
+324;Restaurante 324;Sao Paulo;3,4;319;Italiana;34;38,91
+325;Restaurante 325;Brasilia;4,9;642;Hamburguer;34;59,56
+326;Restaurante 326;Brasilia;4,5;171;Japonesa;26;50,05
+327;Restaurante 327;Sao Paulo;4,8;907;Brasileira;30;56,87
+328;Restaurante 328;Porto Alegre;3,6;570;Brasileira;33;69,05
+329;Restaurante 329;Belo Horizonte;3,9;694;Pizza;30;48,47
+330;Restaurante 330;Sao Paulo;4,1;866;Hamburguer;21;29,81
+331;Restaurante 331;Rio de Janeiro;4,2;513;Japonesa;25;48,60
+332;Restaurante 332;Sao Paulo;4,1;714;Hamburguer;31;65,05
+333;Restaurante 333;Belo Horizonte;4,6;658;Italiana;44;36,51
+334;Restaurante 334;Porto Alegre;4,2;216;Pizza;28;54,16
+335;Restaurante 335;Rio de Janeiro;4,0;225;Brasileira;30;47,74
+336;Restaurante 336;Porto Alegre;4,1;546;Brasileira;28;27,60
+337;Restaurante 337;Brasilia;3,2;804;Italiana;37;25,31
+338;Restaurante 338;Brasilia;3,4;727;Japonesa;44;62,36
+339;Restaurante 339;Sao Paulo;3,7;793;Pizza;40;71,34
+340;Restaurante 340;Porto Alegre;3,8;198;Italiana;45;65,80
+341;Restaurante 341;Porto Alegre;4,9;135;Brasileira;47;52,79
+342;Restaurante 342;Porto Alegre;3,1;188;Brasileira;32;57,09
+343;Restaurante 343;Porto Alegre;3,2;253;Hamburguer;22;26,82
+344;Restaurante 344;Sao Paulo;3,5;386;Japonesa;33;68,64
+345;Restaurante 345;Sao Paulo;3,1;856;Brasileira;37;64,28
+346;Restaurante 346;Brasilia;4,2;228;Brasileira;34;51,86
+347;Restaurante 347;Rio de Janeiro;4,8;407;Pizza;20;62,12
+348;Restaurante 348;Rio de Janeiro;4,1;394;Japonesa;36;34,48
+349;Restaurante 349;Porto Alegre;3,8;793;Pizza;42;47,92
+350;Restaurante 350;Rio de Janeiro;4,0;466;Japonesa;27;38,89
+351;Restaurante 351;Belo Horizonte;3,9;348;Pizza;32;42,58
+352;Restaurante 352;Sao Paulo;4,9;378;Japonesa;24;33,60
+353;Restaurante 353;Brasilia;3,0;536;Pizza;47;59,30
+354;Restaurante 354;Brasilia;4,2;306;Pizza;34;52,46
+355;Restaurante 355;Sao Paulo;4,6;1081;Hamburguer;35;29,67
+356;Restaurante 356;Sao Paulo;4,1;983;Japonesa;42;28,61
+357;Restaurante 357;Belo Horizonte;4,6;991;Japonesa;21;60,41
+358;Restaurante 358;Porto Alegre;3,5;840;Italiana;29;52,81
+359;Restaurante 359;Rio de Janeiro;4,4;649;Japonesa;43;36,31
+360;Restaurante 360;Brasilia;3,0;108;Brasileira;42;28,09
+361;Restaurante 361;Sao Paulo;4,5;604;Italiana;22;47,82
+362;Restaurante 362;Brasilia;4,7;224;Italiana;43;55,54
+363;Restaurante 363;Porto Alegre;3,9;1072;Pizza;32;34,15
+364;Restaurante 364;Sao Paulo;3,4;932;Italiana;32;48,02
+365;Restaurante 365;Brasilia;3,6;642;Hamburguer;49;45,08
+366;Restaurante 366;Belo Horizonte;4,9;927;Hamburguer;48;31,53
+367;Restaurante 367;Belo Horizonte;3,4;618;Brasileira;42;37,43
+368;Restaurante 368;Brasilia;3,9;261;Brasileira;23;56,35
+369;Restaurante 369;Sao Paulo;4,8;141;Brasileira;32;34,42
+370;Restaurante 370;Sao Paulo;4,3;503;Hamburguer;40;52,31
+371;Restaurante 371;Belo Horizonte;4,5;1051;Italiana;36;38,73
+372;Restaurante 372;Sao Paulo;3,9;715;Hamburguer;49;25,54
+373;Restaurante 373;Porto Alegre;4,8;978;Japonesa;39;52,72
+374;Restaurante 374;Belo Horizonte;3,5;430;Pizza;22;56,02
+375;Restaurante 375;Rio de Janeiro;4,2;159;Brasileira;22;71,40
+376;Restaurante 376;Brasilia;4,3;184;Pizza;21;68,13
+377;Restaurante 377;Brasilia;4,4;243;Pizza;46;26,70
+378;Restaurante 378;Brasilia;3,7;927;Brasileira;41;58,80
+379;Restaurante 379;Sao Paulo;3,6;555;Brasileira;33;73,75
+380;Restaurante 380;Belo Horizonte;3,8;953;Japonesa;21;30,23
+381;Restaurante 381;Rio de Janeiro;4,7;694;Japonesa;49;72,40
+382;Restaurante 382;Brasilia;3,9;430;Japonesa;21;36,77
+383;Restaurante 383;Porto Alegre;5,0;106;Japonesa;32;30,05
+384;Restaurante 384;Brasilia;4,6;859;Italiana;32;68,15
+385;Restaurante 385;Porto Alegre;3,1;853;Italiana;29;33,85
+386;Restaurante 386;Belo Horizonte;4,5;759;Pizza;45;53,44
+387;Restaurante 387;Rio de Janeiro;4,6;640;Italiana;20;63,25
+388;Restaurante 388;Porto Alegre;4,4;281;Pizza;25;32,96
+389;Restaurante 389;Sao Paulo;3,9;598;Brasileira;24;36,13
+390;Restaurante 390;Belo Horizonte;3,3;230;Brasileira;26;57,67
+391;Restaurante 391;Brasilia;4,1;745;Italiana;44;54,45
+392;Restaurante 392;Porto Alegre;3,2;231;Japonesa;44;38,04
+393;Restaurante 393;Belo Horizonte;3,1;637;Brasileira;45;27,56
+394;Restaurante 394;Rio de Janeiro;3,0;816;Italiana;49;27,11
+395;Restaurante 395;Sao Paulo;4,9;209;Japonesa;32;64,17
+396;Restaurante 396;Belo Horizonte;3,3;753;Hamburguer;44;34,68
+397;Restaurante 397;Rio de Janeiro;4,8;876;Italiana;33;36,18
+398;Restaurante 398;Belo Horizonte;3,1;1008;Pizza;43;32,22
+399;Restaurante 399;Brasilia;3,8;484;Japonesa;25;30,29
+400;Restaurante 400;Belo Horizonte;4,8;123;Hamburguer;24;70,70
+401;Restaurante 401;Belo Horizonte;4,0;928;Italiana;48;65,56
+402;Restaurante 402;Brasilia;4,2;209;Brasileira;27;45,68
+403;Restaurante 403;Belo Horizonte;3,0;791;Japonesa;48;67,90
+404;Restaurante 404;Sao Paulo;3,9;177;Pizza;47;57,02
+405;Restaurante 405;Belo Horizonte;4,5;910;Japonesa;33;54,75
+406;Restaurante 406;Brasilia;3,3;945;Pizza;47;72,42
+407;Restaurante 407;Sao Paulo;4,1;316;Japonesa;22;45,71
+408;Restaurante 408;Rio de Janeiro;3,1;1032;Hamburguer;30;67,28
+409;Restaurante 409;Porto Alegre;4,5;1080;Hamburguer;40;27,58
+410;Restaurante 410;Brasilia;4,0;596;Italiana;46;25,07
+411;Restaurante 411;Belo Horizonte;3,8;1041;Brasileira;42;64,42
+412;Restaurante 412;Belo Horizonte;3,7;115;Hamburguer;36;45,49
+413;Restaurante 413;Sao Paulo;3,5;1020;Hamburguer;47;56,21
+414;Restaurante 414;Brasilia;3,2;652;Italiana;43;69,99
+415;Restaurante 415;Brasilia;3,7;489;Brasileira;48;61,68
+416;Restaurante 416;Porto Alegre;4,5;462;Italiana;42;46,59
+417;Restaurante 417;Sao Paulo;4,9;645;Hamburguer;35;63,85
+418;Restaurante 418;Rio de Janeiro;4,6;390;Japonesa;41;68,76
+419;Restaurante 419;Porto Alegre;4,2;104;Italiana;45;68,91
+420;Restaurante 420;Sao Paulo;4,9;917;Italiana;42;35,17
+421;Restaurante 421;Sao Paulo;3,4;520;Italiana;25;41,88
+422;Restaurante 422;Sao Paulo;4,8;119;Italiana;27;40,20
+423;Restaurante 423;Brasilia;4,5;906;Hamburguer;36;44,85
+424;Restaurante 424;Porto Alegre;3,8;300;Japonesa;47;67,02
+425;Restaurante 425;Porto Alegre;3,3;599;Japonesa;21;56,08
+426;Restaurante 426;Sao Paulo;4,2;898;Italiana;38;67,90
+427;Restaurante 427;Brasilia;3,9;476;Japonesa;46;60,84
+428;Restaurante 428;Porto Alegre;3,6;663;Pizza;32;28,87
+429;Restaurante 429;Sao Paulo;4,5;919;Hamburguer;44;67,24
+430;Restaurante 430;Brasilia;4,7;1075;Japonesa;24;28,21
+431;Restaurante 431;Belo Horizonte;4,0;920;Pizza;28;62,92
+432;Restaurante 432;Belo Horizonte;4,9;331;Hamburguer;45;60,96
+433;Restaurante 433;Belo Horizonte;3,5;181;Japonesa;47;40,94
+434;Restaurante 434;Rio de Janeiro;4,3;998;Japonesa;22;63,82
+435;Restaurante 435;Belo Horizonte;4,0;652;Italiana;21;35,61
+436;Restaurante 436;Porto Alegre;3,4;378;Italiana;33;37,78
+437;Restaurante 437;Rio de Janeiro;4,6;108;Italiana;29;71,66
+438;Restaurante 438;Brasilia;3,9;247;Pizza;29;27,79
+439;Restaurante 439;Brasilia;4,8;963;Japonesa;27;42,52
+440;Restaurante 440;Rio de Janeiro;3,2;1082;Japonesa;48;31,72
+441;Restaurante 441;Belo Horizonte;4,1;760;Pizza;37;46,07
+442;Restaurante 442;Belo Horizonte;3,2;394;Pizza;29;73,09
+443;Restaurante 443;Belo Horizonte;4,4;113;Italiana;49;68,65
+444;Restaurante 444;Porto Alegre;3,8;326;Brasileira;31;34,70
+445;Restaurante 445;Brasilia;4,0;1085;Pizza;22;70,65
+446;Restaurante 446;Sao Paulo;3,3;412;Hamburguer;48;62,67
+447;Restaurante 447;Sao Paulo;3,5;106;Japonesa;30;39,52
+448;Restaurante 448;Sao Paulo;3,8;810;Hamburguer;40;62,96
+449;Restaurante 449;Brasilia;3,3;199;Italiana;40;38,52
+450;Restaurante 450;Sao Paulo;4,1;888;Brasileira;23;25,05
+451;Restaurante 451;Sao Paulo;3,4;387;Brasileira;31;42,00
+452;Restaurante 452;Sao Paulo;4,5;570;Hamburguer;31;69,66
+453;Restaurante 453;Porto Alegre;4,7;1019;Italiana;44;60,57
+454;Restaurante 454;Rio de Janeiro;4,3;425;Brasileira;22;30,34
+455;Restaurante 455;Sao Paulo;3,5;166;Brasileira;29;71,94
+456;Restaurante 456;Belo Horizonte;4,4;523;Brasileira;27;40,65
+457;Restaurante 457;Belo Horizonte;5,0;731;Pizza;39;35,80
+458;Restaurante 458;Porto Alegre;3,6;445;Pizza;44;61,88
+459;Restaurante 459;Belo Horizonte;4,6;377;Italiana;36;33,50
+460;Restaurante 460;Porto Alegre;4,9;688;Pizza;44;48,12
+461;Restaurante 461;Rio de Janeiro;4,6;101;Hamburguer;46;35,93
+462;Restaurante 462;Rio de Janeiro;3,2;688;Pizza;42;58,31
+463;Restaurante 463;Porto Alegre;4,9;255;Japonesa;45;65,30
+464;Restaurante 464;Rio de Janeiro;4,8;844;Japonesa;30;37,41
+465;Restaurante 465;Sao Paulo;4,7;316;Brasileira;48;29,31
+466;Restaurante 466;Sao Paulo;4,9;596;Italiana;36;51,16
+467;Restaurante 467;Porto Alegre;3,3;492;Hamburguer;47;68,31
+468;Restaurante 468;Porto Alegre;3,4;1093;Hamburguer;20;71,64
+469;Restaurante 469;Brasilia;4,0;780;Italiana;40;69,04
+470;Restaurante 470;Sao Paulo;4,9;814;Hamburguer;21;72,97
+471;Restaurante 471;Brasilia;4,7;836;Hamburguer;43;60,47
+472;Restaurante 472;Porto Alegre;5,0;566;Italiana;39;59,51
+473;Restaurante 473;Porto Alegre;4,7;985;Brasileira;38;70,35
+474;Restaurante 474;Rio de Janeiro;4,7;971;Italiana;47;60,89
+475;Restaurante 475;Sao Paulo;4,0;739;Italiana;38;33,08
+476;Restaurante 476;Sao Paulo;4,1;395;Hamburguer;49;41,04
+477;Restaurante 477;Belo Horizonte;4,3;440;Italiana;21;52,30
+478;Restaurante 478;Rio de Janeiro;4,3;166;Japonesa;48;30,82
+479;Restaurante 479;Brasilia;3,0;566;Pizza;40;34,01
+480;Restaurante 480;Rio de Janeiro;4,9;817;Pizza;44;56,28
+481;Restaurante 481;Brasilia;4,6;267;Brasileira;36;68,62
+482;Restaurante 482;Porto Alegre;4,4;987;Japonesa;42;47,04
+483;Restaurante 483;Porto Alegre;4,3;495;Japonesa;30;52,55
+484;Restaurante 484;Brasilia;4,8;138;Brasileira;21;72,10
+485;Restaurante 485;Belo Horizonte;4,0;808;Pizza;35;52,94
+486;Restaurante 486;Brasilia;3,0;1046;Pizza;47;62,33
+487;Restaurante 487;Sao Paulo;4,4;580;Japonesa;40;31,11
+488;Restaurante 488;Sao Paulo;4,3;1012;Pizza;30;41,98
+489;Restaurante 489;Porto Alegre;4,0;762;Hamburguer;42;53,17
+490;Restaurante 490;Belo Horizonte;3,4;1099;Brasileira;28;53,63
+491;Restaurante 491;Belo Horizonte;3,1;664;Italiana;46;28,64
+492;Restaurante 492;Rio de Janeiro;4,9;978;Italiana;25;73,73
+493;Restaurante 493;Sao Paulo;4,1;813;Brasileira;48;30,23
+494;Restaurante 494;Brasilia;3,7;111;Japonesa;29;28,19
+495;Restaurante 495;Rio de Janeiro;3,4;991;Pizza;44;60,84
+496;Restaurante 496;Belo Horizonte;3,3;792;Japonesa;35;30,30
+497;Restaurante 497;Porto Alegre;3,5;797;Pizza;25;45,93
+498;Restaurante 498;Rio de Janeiro;3,0;364;Hamburguer;45;25,24
+499;Restaurante 499;Porto Alegre;3,8;325;Hamburguer;46;42,09
+500;Restaurante 500;Sao Paulo;4,4;602;Hamburguer;20;38,60
+501;Restaurante 501;Belo Horizonte;4,9;462;Pizza;20;65,23
+502;Restaurante 502;Brasilia;3,8;984;Pizza;29;38,15
+503;Restaurante 503;Belo Horizonte;4,7;815;Hamburguer;27;54,13
+504;Restaurante 504;Belo Horizonte;3,1;1036;Italiana;23;31,23
+505;Restaurante 505;Rio de Janeiro;4,9;421;Pizza;44;47,66
+506;Restaurante 506;Belo Horizonte;3,6;574;Pizza;38;32,10
+507;Restaurante 507;Sao Paulo;3,1;719;Hamburguer;33;66,55
+508;Restaurante 508;Belo Horizonte;4,4;787;Hamburguer;30;46,37
+509;Restaurante 509;Belo Horizonte;3,0;580;Japonesa;39;53,03
+510;Restaurante 510;Belo Horizonte;5,0;194;Brasileira;43;32,28
+511;Restaurante 511;Sao Paulo;3,9;235;Japonesa;45;34,02
+512;Restaurante 512;Sao Paulo;3,5;385;Japonesa;44;60,52
+513;Restaurante 513;Brasilia;4,9;881;Japonesa;36;36,44
+514;Restaurante 514;Belo Horizonte;4,8;232;Italiana;22;57,58
+515;Restaurante 515;Sao Paulo;3,3;718;Pizza;22;45,22
+516;Restaurante 516;Belo Horizonte;3,8;140;Brasileira;22;29,36
+517;Restaurante 517;Porto Alegre;4,6;807;Japonesa;48;57,47
+518;Restaurante 518;Porto Alegre;3,5;1020;Japonesa;36;74,80
+519;Restaurante 519;Belo Horizonte;4,1;764;Italiana;36;48,61
+520;Restaurante 520;Porto Alegre;4,6;431;Italiana;26;61,56
+521;Restaurante 521;Brasilia;4,2;202;Italiana;44;28,69
+522;Restaurante 522;Rio de Janeiro;3,7;219;Hamburguer;46;48,32
+523;Restaurante 523;Brasilia;4,6;689;Hamburguer;38;29,91
+524;Restaurante 524;Sao Paulo;4,4;222;Pizza;27;50,66
+525;Restaurante 525;Brasilia;3,5;511;Hamburguer;31;28,40
+526;Restaurante 526;Sao Paulo;3,2;552;Hamburguer;45;60,36
+527;Restaurante 527;Rio de Janeiro;4,1;921;Japonesa;22;66,35
+528;Restaurante 528;Belo Horizonte;3,6;1061;Italiana;25;39,86
+529;Restaurante 529;Brasilia;4,5;728;Italiana;34;52,62
+530;Restaurante 530;Sao Paulo;4,7;294;Japonesa;46;26,69
+531;Restaurante 531;Porto Alegre;3,8;681;Italiana;32;32,70
+532;Restaurante 532;Rio de Janeiro;4,4;577;Hamburguer;46;44,89
+533;Restaurante 533;Sao Paulo;3,9;666;Brasileira;28;31,39
+534;Restaurante 534;Porto Alegre;4,6;651;Brasileira;27;32,86
+535;Restaurante 535;Sao Paulo;4,1;571;Brasileira;34;33,98
+536;Restaurante 536;Brasilia;3,5;476;Japonesa;46;59,90
+537;Restaurante 537;Porto Alegre;4,5;634;Italiana;33;34,23
+538;Restaurante 538;Porto Alegre;4,0;939;Japonesa;49;65,92
+539;Restaurante 539;Brasilia;3,6;573;Japonesa;40;40,04
+540;Restaurante 540;Rio de Janeiro;4,9;972;Japonesa;27;71,31
+541;Restaurante 541;Belo Horizonte;4,9;539;Pizza;48;39,99
+542;Restaurante 542;Rio de Janeiro;4,7;248;Japonesa;37;66,71
+543;Restaurante 543;Brasilia;4,5;538;Italiana;47;46,80
+544;Restaurante 544;Brasilia;4,5;1004;Hamburguer;48;54,65
+545;Restaurante 545;Belo Horizonte;3,8;889;Hamburguer;42;45,80
+546;Restaurante 546;Brasilia;4,4;271;Japonesa;30;27,59
+547;Restaurante 547;Rio de Janeiro;5,0;438;Pizza;47;39,34
+548;Restaurante 548;Porto Alegre;4,1;312;Hamburguer;23;29,52
+549;Restaurante 549;Belo Horizonte;4,3;384;Italiana;23;40,45
+550;Restaurante 550;Brasilia;3,4;421;Pizza;21;60,69
+551;Restaurante 551;Sao Paulo;4,9;1006;Italiana;35;31,62
+552;Restaurante 552;Rio de Janeiro;4,0;292;Japonesa;31;47,41
+553;Restaurante 553;Rio de Janeiro;3,8;293;Brasileira;22;66,87
+554;Restaurante 554;Belo Horizonte;3,4;181;Pizza;40;61,70
+555;Restaurante 555;Sao Paulo;4,6;404;Hamburguer;42;58,11
+556;Restaurante 556;Sao Paulo;3,2;589;Hamburguer;43;37,64
+557;Restaurante 557;Brasilia;4,6;418;Japonesa;27;48,97
+558;Restaurante 558;Porto Alegre;4,1;571;Brasileira;36;44,17
+559;Restaurante 559;Brasilia;3,8;1014;Brasileira;37;42,05
+560;Restaurante 560;Sao Paulo;4,9;357;Brasileira;28;36,27
+561;Restaurante 561;Brasilia;4,9;317;Italiana;27;57,72
+562;Restaurante 562;Belo Horizonte;4,9;603;Brasileira;44;69,23
+563;Restaurante 563;Sao Paulo;4,7;950;Italiana;41;65,55
+564;Restaurante 564;Belo Horizonte;3,1;730;Brasileira;28;72,97
+565;Restaurante 565;Belo Horizonte;3,0;233;Hamburguer;44;41,43
+566;Restaurante 566;Porto Alegre;3,2;681;Brasileira;25;45,97
+567;Restaurante 567;Porto Alegre;4,7;922;Brasileira;22;66,40
+568;Restaurante 568;Belo Horizonte;4,5;247;Italiana;32;41,02
+569;Restaurante 569;Porto Alegre;4,4;858;Brasileira;24;45,37
+570;Restaurante 570;Rio de Janeiro;3,6;641;Pizza;48;27,18
+571;Restaurante 571;Brasilia;3,6;597;Japonesa;25;36,67
+572;Restaurante 572;Rio de Janeiro;3,5;432;Hamburguer;48;25,17
+573;Restaurante 573;Rio de Janeiro;3,2;940;Hamburguer;24;45,60
+574;Restaurante 574;Porto Alegre;3,6;904;Japonesa;37;25,66
+575;Restaurante 575;Sao Paulo;4,4;604;Hamburguer;23;48,03
+576;Restaurante 576;Sao Paulo;4,3;153;Japonesa;42;62,60
+577;Restaurante 577;Porto Alegre;4,4;1067;Italiana;46;72,07
+578;Restaurante 578;Porto Alegre;4,3;209;Brasileira;41;26,09
+579;Restaurante 579;Porto Alegre;4,1;617;Japonesa;21;28,90
+580;Restaurante 580;Rio de Janeiro;4,8;310;Hamburguer;20;61,91
+581;Restaurante 581;Rio de Janeiro;4,1;468;Pizza;43;45,95
+582;Restaurante 582;Brasilia;3,5;1055;Brasileira;28;67,31
+583;Restaurante 583;Brasilia;4,7;265;Pizza;34;68,23
+584;Restaurante 584;Rio de Janeiro;3,3;1011;Italiana;23;55,01
+585;Restaurante 585;Belo Horizonte;4,8;817;Italiana;25;56,26
+586;Restaurante 586;Rio de Janeiro;3,5;1024;Japonesa;34;70,15
+587;Restaurante 587;Rio de Janeiro;3,7;361;Italiana;42;71,21
+588;Restaurante 588;Brasilia;4,0;781;Hamburguer;21;57,11
+589;Restaurante 589;Sao Paulo;4,3;176;Italiana;36;50,78
+590;Restaurante 590;Porto Alegre;4,5;1024;Japonesa;23;35,82
+591;Restaurante 591;Rio de Janeiro;3,3;468;Brasileira;20;41,55
+592;Restaurante 592;Rio de Janeiro;4,9;847;Pizza;29;59,70
+593;Restaurante 593;Sao Paulo;4,3;764;Italiana;43;66,10
+594;Restaurante 594;Porto Alegre;3,2;841;Japonesa;33;39,69
+595;Restaurante 595;Belo Horizonte;3,2;686;Hamburguer;39;65,70
+596;Restaurante 596;Sao Paulo;3,6;629;Hamburguer;45;31,52
+597;Restaurante 597;Porto Alegre;4,2;1033;Pizza;30;72,06
+598;Restaurante 598;Belo Horizonte;3,6;1088;Italiana;31;45,72
+599;Restaurante 599;Belo Horizonte;4,7;531;Pizza;36;73,68
+600;Restaurante 600;Brasilia;3,5;379;Hamburguer;27;52,55
+601;Restaurante 601;Rio de Janeiro;4,5;283;Italiana;24;55,39
+602;Restaurante 602;Brasilia;3,5;802;Italiana;27;66,27
+603;Restaurante 603;Sao Paulo;4,4;159;Italiana;38;51,74
+604;Restaurante 604;Brasilia;4,3;949;Hamburguer;44;55,99
+605;Restaurante 605;Rio de Janeiro;3,4;998;Pizza;35;67,60
+606;Restaurante 606;Porto Alegre;4,4;210;Japonesa;42;42,49
+607;Restaurante 607;Sao Paulo;4,0;615;Japonesa;47;31,79
+608;Restaurante 608;Brasilia;4,3;599;Brasileira;24;53,27
+609;Restaurante 609;Sao Paulo;3,5;655;Brasileira;42;62,13
+610;Restaurante 610;Sao Paulo;3,6;900;Brasileira;37;70,21
+611;Restaurante 611;Rio de Janeiro;3,7;661;Italiana;34;32,55
+612;Restaurante 612;Brasilia;3,6;766;Brasileira;24;67,06
+613;Restaurante 613;Brasilia;3,6;729;Hamburguer;32;45,80
+614;Restaurante 614;Porto Alegre;3,7;116;Hamburguer;48;46,30
+615;Restaurante 615;Belo Horizonte;4,5;767;Italiana;30;27,45
+616;Restaurante 616;Sao Paulo;4,8;909;Hamburguer;34;47,30
+617;Restaurante 617;Belo Horizonte;3,5;288;Pizza;37;69,46
+618;Restaurante 618;Rio de Janeiro;3,7;214;Hamburguer;28;60,61
+619;Restaurante 619;Belo Horizonte;4,8;712;Hamburguer;38;64,33
+620;Restaurante 620;Porto Alegre;4,7;983;Brasileira;38;45,20
+621;Restaurante 621;Belo Horizonte;3,2;136;Pizza;34;32,92
+622;Restaurante 622;Porto Alegre;4,3;1063;Pizza;31;58,35
+623;Restaurante 623;Rio de Janeiro;3,3;1068;Italiana;49;61,91
+624;Restaurante 624;Rio de Janeiro;3,4;162;Pizza;32;70,28
+625;Restaurante 625;Rio de Janeiro;3,1;317;Japonesa;34;29,16
+626;Restaurante 626;Rio de Janeiro;4,5;785;Japonesa;49;47,99
+627;Restaurante 627;Sao Paulo;3,1;1007;Brasileira;28;57,89
+628;Restaurante 628;Rio de Janeiro;4,5;826;Brasileira;39;55,43
+629;Restaurante 629;Belo Horizonte;3,5;211;Pizza;34;52,77
+630;Restaurante 630;Rio de Janeiro;4,1;858;Italiana;21;29,68
+631;Restaurante 631;Rio de Janeiro;5,0;446;Brasileira;45;34,02
+632;Restaurante 632;Brasilia;4,5;689;Pizza;45;54,94
+633;Restaurante 633;Belo Horizonte;3,7;1007;Japonesa;45;47,64
+634;Restaurante 634;Porto Alegre;4,2;733;Pizza;34;69,21
+635;Restaurante 635;Brasilia;3,2;107;Italiana;45;42,71
+636;Restaurante 636;Rio de Janeiro;3,5;724;Hamburguer;27;50,54
+637;Restaurante 637;Sao Paulo;3,3;171;Italiana;39;68,96
+638;Restaurante 638;Sao Paulo;4,3;742;Hamburguer;26;42,43
+639;Restaurante 639;Belo Horizonte;4,7;516;Japonesa;29;60,57
+640;Restaurante 640;Sao Paulo;3,4;752;Pizza;30;40,52
+641;Restaurante 641;Belo Horizonte;3,5;469;Pizza;35;34,41
+642;Restaurante 642;Rio de Janeiro;3,1;657;Italiana;39;25,15
+643;Restaurante 643;Brasilia;3,1;260;Brasileira;20;43,59
+644;Restaurante 644;Porto Alegre;4,5;528;Japonesa;43;36,73
+645;Restaurante 645;Brasilia;3,3;752;Japonesa;21;39,65
+646;Restaurante 646;Belo Horizonte;3,0;234;Pizza;45;53,66
+647;Restaurante 647;Sao Paulo;3,3;407;Japonesa;43;59,16
+648;Restaurante 648;Belo Horizonte;4,7;448;Pizza;20;44,72
+649;Restaurante 649;Sao Paulo;4,2;352;Japonesa;21;63,08
+650;Restaurante 650;Belo Horizonte;3,7;822;Italiana;22;30,65
+651;Restaurante 651;Rio de Janeiro;4,0;209;Hamburguer;38;69,77
+652;Restaurante 652;Brasilia;4,2;564;Hamburguer;40;51,80
+653;Restaurante 653;Belo Horizonte;3,1;417;Brasileira;49;34,79
+654;Restaurante 654;Belo Horizonte;4,8;192;Hamburguer;32;51,67
+655;Restaurante 655;Rio de Janeiro;4,2;127;Brasileira;48;43,55
+656;Restaurante 656;Rio de Janeiro;4,8;1048;Japonesa;33;48,13
+657;Restaurante 657;Porto Alegre;4,2;624;Japonesa;47;44,86
+658;Restaurante 658;Belo Horizonte;4,3;843;Pizza;20;27,13
+659;Restaurante 659;Sao Paulo;3,6;139;Hamburguer;30;66,50
+660;Restaurante 660;Brasilia;4,0;1024;Hamburguer;43;55,82
+661;Restaurante 661;Rio de Janeiro;4,3;943;Hamburguer;34;65,83
+662;Restaurante 662;Porto Alegre;3,2;477;Hamburguer;20;74,75
+663;Restaurante 663;Brasilia;4,6;971;Brasileira;21;31,52
+664;Restaurante 664;Brasilia;4,2;961;Hamburguer;22;41,09
+665;Restaurante 665;Porto Alegre;4,3;788;Italiana;28;64,51
+666;Restaurante 666;Brasilia;3,5;290;Pizza;29;57,60
+667;Restaurante 667;Brasilia;3,1;713;Italiana;44;29,19
+668;Restaurante 668;Porto Alegre;3,0;206;Brasileira;26;34,31
+669;Restaurante 669;Belo Horizonte;3,3;154;Japonesa;34;27,97
+670;Restaurante 670;Brasilia;3,5;492;Japonesa;41;42,53
+671;Restaurante 671;Rio de Janeiro;4,9;251;Brasileira;46;65,26
+672;Restaurante 672;Brasilia;3,5;307;Pizza;46;33,19
+673;Restaurante 673;Rio de Janeiro;4,4;549;Japonesa;35;28,86
+674;Restaurante 674;Sao Paulo;3,7;896;Hamburguer;36;54,23
+675;Restaurante 675;Belo Horizonte;3,6;845;Japonesa;43;29,99
+676;Restaurante 676;Sao Paulo;4,4;1012;Italiana;34;63,90
+677;Restaurante 677;Sao Paulo;4,6;865;Hamburguer;42;54,91
+678;Restaurante 678;Sao Paulo;3,8;427;Hamburguer;42;49,73
+679;Restaurante 679;Porto Alegre;3,0;345;Hamburguer;48;44,18
+680;Restaurante 680;Rio de Janeiro;3,0;1053;Japonesa;21;25,17
+681;Restaurante 681;Brasilia;3,3;1090;Japonesa;34;27,78
+682;Restaurante 682;Porto Alegre;4,1;1048;Italiana;37;38,40
+683;Restaurante 683;Sao Paulo;3,6;204;Pizza;26;56,95
+684;Restaurante 684;Porto Alegre;4,2;370;Italiana;38;40,51
+685;Restaurante 685;Porto Alegre;3,1;205;Brasileira;25;36,07
+686;Restaurante 686;Brasilia;3,1;915;Pizza;35;72,50
+687;Restaurante 687;Brasilia;4,8;187;Italiana;30;70,33
+688;Restaurante 688;Brasilia;3,4;1064;Brasileira;48;43,30
+689;Restaurante 689;Brasilia;5,0;325;Pizza;24;57,66
+690;Restaurante 690;Sao Paulo;3,1;704;Brasileira;37;33,22
+691;Restaurante 691;Brasilia;4,8;873;Hamburguer;21;65,57
+692;Restaurante 692;Belo Horizonte;3,8;673;Japonesa;38;70,03
+693;Restaurante 693;Porto Alegre;4,4;381;Pizza;20;46,31
+694;Restaurante 694;Porto Alegre;3,4;1051;Brasileira;32;37,20
+695;Restaurante 695;Sao Paulo;3,2;441;Pizza;43;56,21
+696;Restaurante 696;Porto Alegre;4,3;411;Italiana;24;36,38
+697;Restaurante 697;Sao Paulo;3,4;995;Italiana;44;57,42
+698;Restaurante 698;Rio de Janeiro;4,8;168;Pizza;42;38,62
+699;Restaurante 699;Rio de Janeiro;4,7;970;Brasileira;39;42,94
+700;Restaurante 700;Porto Alegre;3,2;905;Hamburguer;23;71,50
+701;Restaurante 701;Sao Paulo;3,7;531;Pizza;21;38,21
+702;Restaurante 702;Rio de Janeiro;4,5;980;Japonesa;45;51,71
+703;Restaurante 703;Rio de Janeiro;3,9;877;Hamburguer;24;45,17
+704;Restaurante 704;Porto Alegre;4,1;247;Brasileira;46;35,10
+705;Restaurante 705;Brasilia;3,5;751;Japonesa;39;56,98
+706;Restaurante 706;Rio de Janeiro;3,9;490;Pizza;38;68,86
+707;Restaurante 707;Brasilia;4,9;775;Hamburguer;26;34,37
+708;Restaurante 708;Sao Paulo;4,3;257;Italiana;27;42,75
+709;Restaurante 709;Belo Horizonte;3,6;956;Hamburguer;37;46,78
+710;Restaurante 710;Sao Paulo;3,5;1093;Italiana;21;49,19
+711;Restaurante 711;Porto Alegre;3,4;117;Japonesa;36;44,23
+712;Restaurante 712;Rio de Janeiro;3,4;292;Pizza;39;74,00
+713;Restaurante 713;Porto Alegre;3,3;1071;Pizza;32;38,24
+714;Restaurante 714;Sao Paulo;3,4;347;Italiana;31;52,61
+715;Restaurante 715;Brasilia;3,1;649;Brasileira;32;32,48
+716;Restaurante 716;Porto Alegre;3,8;138;Japonesa;32;38,63
+717;Restaurante 717;Porto Alegre;3,5;1099;Brasileira;47;56,69
+718;Restaurante 718;Sao Paulo;4,0;976;Brasileira;31;44,44
+719;Restaurante 719;Brasilia;3,6;1025;Hamburguer;25;69,51
+720;Restaurante 720;Sao Paulo;3,9;881;Hamburguer;47;25,86
+721;Restaurante 721;Brasilia;3,6;108;Italiana;41;58,57
+722;Restaurante 722;Rio de Janeiro;4,3;982;Japonesa;41;45,48
+723;Restaurante 723;Rio de Janeiro;4,4;512;Brasileira;21;28,80
+724;Restaurante 724;Sao Paulo;3,1;316;Hamburguer;30;61,61
+725;Restaurante 725;Sao Paulo;4,9;358;Pizza;30;32,03
+726;Restaurante 726;Sao Paulo;3,5;890;Japonesa;40;52,65
+727;Restaurante 727;Belo Horizonte;4,9;394;Hamburguer;41;54,00
+728;Restaurante 728;Brasilia;3,1;279;Brasileira;25;48,68
+729;Restaurante 729;Sao Paulo;3,3;957;Hamburguer;43;36,83
+730;Restaurante 730;Sao Paulo;4,8;905;Japonesa;40;55,07
+731;Restaurante 731;Rio de Janeiro;4,4;348;Hamburguer;36;27,90
+732;Restaurante 732;Brasilia;4,1;342;Japonesa;27;65,03
+733;Restaurante 733;Porto Alegre;3,5;181;Hamburguer;45;58,51
+734;Restaurante 734;Belo Horizonte;4,7;550;Brasileira;37;70,72
+735;Restaurante 735;Rio de Janeiro;4,0;152;Japonesa;26;68,01
+736;Restaurante 736;Brasilia;3,7;198;Hamburguer;28;45,03
+737;Restaurante 737;Porto Alegre;4,1;859;Italiana;39;51,79
+738;Restaurante 738;Brasilia;4,5;1061;Japonesa;49;28,54
+739;Restaurante 739;Sao Paulo;4,8;860;Pizza;24;74,01
+740;Restaurante 740;Rio de Janeiro;4,0;873;Pizza;47;68,72
+741;Restaurante 741;Brasilia;3,3;1065;Japonesa;46;48,24
+742;Restaurante 742;Brasilia;4,4;722;Japonesa;24;71,07
+743;Restaurante 743;Sao Paulo;3,5;466;Hamburguer;29;51,95
+744;Restaurante 744;Rio de Janeiro;3,3;341;Pizza;32;34,05
+745;Restaurante 745;Belo Horizonte;4,8;941;Japonesa;30;53,18
+746;Restaurante 746;Brasilia;4,8;249;Italiana;23;52,62
+747;Restaurante 747;Belo Horizonte;4,3;392;Pizza;42;40,11
+748;Restaurante 748;Porto Alegre;4,9;733;Hamburguer;36;37,20
+749;Restaurante 749;Sao Paulo;4,3;466;Italiana;24;56,92
+750;Restaurante 750;Rio de Janeiro;3,9;527;Italiana;40;57,90
+751;Restaurante 751;Belo Horizonte;3,2;297;Italiana;48;61,76
+752;Restaurante 752;Brasilia;3,5;341;Japonesa;28;35,82
+753;Restaurante 753;Sao Paulo;4,7;1060;Hamburguer;31;35,14
+754;Restaurante 754;Rio de Janeiro;4,2;574;Brasileira;38;66,19
+755;Restaurante 755;Rio de Janeiro;3,1;522;Hamburguer;45;29,55
+756;Restaurante 756;Rio de Janeiro;4,7;537;Brasileira;30;70,34
+757;Restaurante 757;Brasilia;3,2;680;Pizza;48;63,63
+758;Restaurante 758;Sao Paulo;4,2;572;Japonesa;20;36,03
+759;Restaurante 759;Belo Horizonte;4,4;157;Japonesa;34;26,74
+760;Restaurante 760;Rio de Janeiro;3,9;533;Pizza;25;68,29
+761;Restaurante 761;Belo Horizonte;3,4;904;Italiana;22;72,21
+762;Restaurante 762;Rio de Janeiro;3,4;932;Brasileira;27;35,34
+763;Restaurante 763;Porto Alegre;4,2;392;Italiana;45;40,15
+764;Restaurante 764;Sao Paulo;3,8;990;Brasileira;32;56,55
+765;Restaurante 765;Rio de Janeiro;3,9;522;Brasileira;40;63,01
+766;Restaurante 766;Belo Horizonte;4,1;666;Hamburguer;38;42,17
+767;Restaurante 767;Sao Paulo;4,5;189;Pizza;42;69,90
+768;Restaurante 768;Sao Paulo;4,3;774;Pizza;22;56,73
+769;Restaurante 769;Brasilia;4,9;121;Brasileira;47;67,85
+770;Restaurante 770;Rio de Janeiro;3,9;690;Japonesa;29;40,86
+771;Restaurante 771;Porto Alegre;3,5;834;Pizza;21;40,85
+772;Restaurante 772;Brasilia;3,8;1091;Italiana;38;38,44
+773;Restaurante 773;Brasilia;3,7;681;Italiana;35;70,04
+774;Restaurante 774;Sao Paulo;4,4;184;Hamburguer;43;38,75
+775;Restaurante 775;Rio de Janeiro;3,9;218;Pizza;32;40,85
+776;Restaurante 776;Brasilia;4,2;520;Brasileira;48;55,64
+777;Restaurante 777;Belo Horizonte;4,4;838;Hamburguer;27;65,36
+778;Restaurante 778;Sao Paulo;3,9;1001;Japonesa;31;28,36
+779;Restaurante 779;Brasilia;4,0;289;Brasileira;48;60,76
+780;Restaurante 780;Belo Horizonte;4,3;201;Pizza;29;40,99
+781;Restaurante 781;Rio de Janeiro;4,6;740;Hamburguer;42;37,26
+782;Restaurante 782;Rio de Janeiro;4,7;664;Hamburguer;38;70,17
+783;Restaurante 783;Rio de Janeiro;3,9;892;Pizza;35;61,15
+784;Restaurante 784;Rio de Janeiro;3,2;690;Hamburguer;33;33,16
+785;Restaurante 785;Belo Horizonte;3,6;911;Brasileira;20;71,43
+786;Restaurante 786;Belo Horizonte;4,0;656;Italiana;31;70,77
+787;Restaurante 787;Sao Paulo;4,7;229;Pizza;22;40,83
+788;Restaurante 788;Belo Horizonte;4,8;720;Hamburguer;28;62,23
+789;Restaurante 789;Rio de Janeiro;4,1;836;Hamburguer;46;34,50
+790;Restaurante 790;Porto Alegre;4,5;527;Italiana;28;31,65
+791;Restaurante 791;Sao Paulo;4,6;202;Italiana;42;32,15
+792;Restaurante 792;Sao Paulo;4,4;517;Italiana;20;68,01
+793;Restaurante 793;Brasilia;4,1;438;Pizza;28;42,10
+794;Restaurante 794;Sao Paulo;4,2;521;Japonesa;42;43,41
+795;Restaurante 795;Rio de Janeiro;3,9;422;Brasileira;36;47,94
+796;Restaurante 796;Sao Paulo;4,8;1031;Hamburguer;43;26,44
+797;Restaurante 797;Belo Horizonte;4,4;209;Pizza;32;41,12
+798;Restaurante 798;Sao Paulo;3,2;968;Italiana;36;50,50
+799;Restaurante 799;Porto Alegre;3,4;565;Italiana;32;55,38
+800;Restaurante 800;Brasilia;5,0;825;Pizza;38;58,92
+801;Restaurante 801;Sao Paulo;4,2;1065;Japonesa;32;31,24
+802;Restaurante 802;Rio de Janeiro;4,5;209;Italiana;45;61,53
+803;Restaurante 803;Belo Horizonte;3,2;531;Hamburguer;47;51,48
+804;Restaurante 804;Porto Alegre;4,5;1007;Pizza;45;49,77
+805;Restaurante 805;Rio de Janeiro;3,3;850;Pizza;38;50,75
+806;Restaurante 806;Belo Horizonte;4,3;441;Brasileira;20;29,94
+807;Restaurante 807;Belo Horizonte;4,6;108;Brasileira;47;65,40
+808;Restaurante 808;Brasilia;4,9;109;Pizza;45;46,54
+809;Restaurante 809;Brasilia;4,9;328;Brasileira;23;51,56
+810;Restaurante 810;Sao Paulo;4,5;515;Hamburguer;33;30,37
+811;Restaurante 811;Rio de Janeiro;3,5;1037;Hamburguer;36;62,50
+812;Restaurante 812;Belo Horizonte;4,1;424;Brasileira;45;68,46
+813;Restaurante 813;Rio de Janeiro;4,7;1064;Brasileira;21;38,53
+814;Restaurante 814;Belo Horizonte;4,3;779;Italiana;39;55,36
+815;Restaurante 815;Rio de Janeiro;4,3;576;Italiana;40;25,16
+816;Restaurante 816;Porto Alegre;4,9;698;Hamburguer;20;47,85
+817;Restaurante 817;Brasilia;4,0;492;Japonesa;37;48,05
+818;Restaurante 818;Brasilia;3,8;685;Pizza;39;57,69
+819;Restaurante 819;Porto Alegre;4,4;475;Italiana;22;35,34
+820;Restaurante 820;Rio de Janeiro;3,2;345;Japonesa;35;29,49
+821;Restaurante 821;Porto Alegre;4,7;938;Pizza;24;40,84
+822;Restaurante 822;Belo Horizonte;3,7;453;Pizza;42;63,15
+823;Restaurante 823;Porto Alegre;5,0;145;Pizza;44;33,88
+824;Restaurante 824;Porto Alegre;3,4;952;Brasileira;34;53,11
+825;Restaurante 825;Porto Alegre;5,0;709;Brasileira;43;34,04
+826;Restaurante 826;Sao Paulo;4,2;135;Italiana;29;28,85
+827;Restaurante 827;Sao Paulo;3,1;534;Pizza;34;31,66
+828;Restaurante 828;Porto Alegre;3,1;1011;Pizza;46;43,77
+829;Restaurante 829;Brasilia;5,0;841;Hamburguer;35;47,54
+830;Restaurante 830;Porto Alegre;3,4;216;Brasileira;36;72,02
+831;Restaurante 831;Porto Alegre;4,1;854;Japonesa;41;47,37
+832;Restaurante 832;Sao Paulo;4,3;190;Japonesa;44;35,30
+833;Restaurante 833;Rio de Janeiro;3,7;387;Brasileira;44;39,60
+834;Restaurante 834;Brasilia;4,6;962;Italiana;40;44,32
+835;Restaurante 835;Porto Alegre;4,4;1061;Brasileira;30;47,15
+836;Restaurante 836;Belo Horizonte;3,4;693;Hamburguer;44;51,79
+837;Restaurante 837;Belo Horizonte;3,8;1069;Italiana;29;56,69
+838;Restaurante 838;Porto Alegre;4,1;835;Hamburguer;25;26,72
+839;Restaurante 839;Sao Paulo;3,1;840;Japonesa;25;60,93
+840;Restaurante 840;Porto Alegre;4,4;532;Pizza;35;71,99
+841;Restaurante 841;Brasilia;3,2;117;Hamburguer;35;72,60
+842;Restaurante 842;Rio de Janeiro;3,1;366;Italiana;45;69,76
+843;Restaurante 843;Belo Horizonte;3,1;338;Italiana;28;50,57
+844;Restaurante 844;Belo Horizonte;3,3;816;Hamburguer;43;51,82
+845;Restaurante 845;Rio de Janeiro;4,6;349;Italiana;29;41,81
+846;Restaurante 846;Sao Paulo;3,8;616;Pizza;24;54,44
+847;Restaurante 847;Sao Paulo;4,7;998;Hamburguer;40;54,70
+848;Restaurante 848;Sao Paulo;4,1;540;Brasileira;27;29,80
+849;Restaurante 849;Belo Horizonte;4,5;627;Hamburguer;22;42,15
+850;Restaurante 850;Sao Paulo;4,6;1043;Japonesa;40;48,55
+851;Restaurante 851;Porto Alegre;4,7;962;Hamburguer;23;35,38
+852;Restaurante 852;Rio de Janeiro;3,3;284;Japonesa;45;40,57
+853;Restaurante 853;Porto Alegre;3,6;130;Pizza;30;31,62
+854;Restaurante 854;Sao Paulo;3,1;956;Brasileira;46;33,53
+855;Restaurante 855;Sao Paulo;3,6;394;Japonesa;33;51,50
+856;Restaurante 856;Brasilia;4,4;580;Italiana;49;61,32
+857;Restaurante 857;Belo Horizonte;4,7;183;Italiana;34;44,61
+858;Restaurante 858;Sao Paulo;3,4;432;Japonesa;24;26,85
+859;Restaurante 859;Porto Alegre;3,0;896;Hamburguer;47;33,88
+860;Restaurante 860;Porto Alegre;5,0;1072;Brasileira;34;66,36
+861;Restaurante 861;Porto Alegre;3,8;260;Hamburguer;43;52,24
+862;Restaurante 862;Brasilia;4,4;346;Italiana;37;74,84
+863;Restaurante 863;Brasilia;4,7;1041;Pizza;29;37,24
+864;Restaurante 864;Sao Paulo;3,9;1052;Brasileira;24;64,53
+865;Restaurante 865;Porto Alegre;3,1;950;Italiana;28;62,07
+866;Restaurante 866;Rio de Janeiro;4,4;990;Italiana;40;41,13
+867;Restaurante 867;Porto Alegre;3,9;930;Japonesa;42;43,79
+868;Restaurante 868;Belo Horizonte;4,2;437;Pizza;34;44,80
+869;Restaurante 869;Sao Paulo;3,6;338;Pizza;20;31,97
+870;Restaurante 870;Porto Alegre;4,8;448;Brasileira;47;65,50
+871;Restaurante 871;Brasilia;4,3;142;Italiana;22;43,72
+872;Restaurante 872;Porto Alegre;3,2;469;Italiana;36;54,73
+873;Restaurante 873;Brasilia;4,1;339;Japonesa;32;73,33
+874;Restaurante 874;Brasilia;4,4;556;Italiana;43;68,27
+875;Restaurante 875;Rio de Janeiro;3,4;793;Brasileira;40;67,35
+876;Restaurante 876;Brasilia;3,9;922;Pizza;27;36,99
+877;Restaurante 877;Brasilia;3,3;277;Pizza;29;68,48
+878;Restaurante 878;Rio de Janeiro;4,4;215;Hamburguer;40;25,23
+879;Restaurante 879;Brasilia;3,5;743;Pizza;43;44,05
+880;Restaurante 880;Rio de Janeiro;3,1;559;Pizza;32;48,93
+881;Restaurante 881;Brasilia;3,9;540;Brasileira;35;27,39
+882;Restaurante 882;Brasilia;4,3;747;Japonesa;25;38,03
+883;Restaurante 883;Porto Alegre;4,9;204;Pizza;31;62,97
+884;Restaurante 884;Sao Paulo;3,8;504;Pizza;45;40,12
+885;Restaurante 885;Rio de Janeiro;3,3;884;Japonesa;20;58,60
+886;Restaurante 886;Rio de Janeiro;4,1;854;Italiana;38;25,12
+887;Restaurante 887;Sao Paulo;4,9;852;Italiana;27;60,47
+888;Restaurante 888;Porto Alegre;3,5;578;Japonesa;29;62,85
+889;Restaurante 889;Belo Horizonte;4,9;282;Italiana;42;29,44
+890;Restaurante 890;Rio de Janeiro;3,8;611;Japonesa;43;58,16
+891;Restaurante 891;Brasilia;4,5;804;Pizza;48;59,32
+892;Restaurante 892;Brasilia;4,9;775;Brasileira;35;40,73
+893;Restaurante 893;Belo Horizonte;3,4;193;Hamburguer;22;40,50
+894;Restaurante 894;Belo Horizonte;3,0;470;Hamburguer;33;68,97
+895;Restaurante 895;Porto Alegre;4,3;167;Hamburguer;43;34,72
+896;Restaurante 896;Rio de Janeiro;4,8;829;Italiana;32;70,25
+897;Restaurante 897;Porto Alegre;3,4;548;Japonesa;32;39,35
+898;Restaurante 898;Sao Paulo;4,0;491;Japonesa;20;51,94
+899;Restaurante 899;Brasilia;4,5;272;Pizza;29;31,95
+900;Restaurante 900;Porto Alegre;3,4;447;Hamburguer;47;30,33
+901;Restaurante 901;Belo Horizonte;3,7;809;Pizza;47;48,49
+902;Restaurante 902;Rio de Janeiro;4,8;446;Italiana;42;37,04
+903;Restaurante 903;Rio de Janeiro;4,6;653;Pizza;39;60,93
+904;Restaurante 904;Sao Paulo;3,8;449;Japonesa;38;74,93
+905;Restaurante 905;Rio de Janeiro;4,7;267;Italiana;38;32,64
+906;Restaurante 906;Belo Horizonte;3,4;1044;Pizza;34;58,20
+907;Restaurante 907;Sao Paulo;4,1;954;Brasileira;20;42,39
+908;Restaurante 908;Belo Horizonte;5,0;823;Brasileira;48;33,60
+909;Restaurante 909;Porto Alegre;3,3;239;Japonesa;32;30,19
+910;Restaurante 910;Brasilia;4,6;616;Italiana;27;42,37
+911;Restaurante 911;Brasilia;3,2;569;Pizza;36;30,93
+912;Restaurante 912;Sao Paulo;4,3;565;Italiana;25;45,11
+913;Restaurante 913;Sao Paulo;4,0;799;Hamburguer;38;73,98
+914;Restaurante 914;Porto Alegre;3,7;389;Pizza;37;43,90
+915;Restaurante 915;Rio de Janeiro;4,0;927;Brasileira;44;39,74
+916;Restaurante 916;Porto Alegre;3,3;423;Pizza;23;49,03
+917;Restaurante 917;Brasilia;4,3;649;Hamburguer;45;26,31
+918;Restaurante 918;Porto Alegre;4,4;873;Italiana;28;49,60
+919;Restaurante 919;Porto Alegre;3,6;217;Japonesa;25;42,15
+920;Restaurante 920;Brasilia;3,9;794;Japonesa;24;60,36
+921;Restaurante 921;Brasilia;4,4;687;Brasileira;41;53,18
+922;Restaurante 922;Rio de Janeiro;4,2;711;Pizza;46;29,17
+923;Restaurante 923;Porto Alegre;4,3;626;Japonesa;29;74,86
+924;Restaurante 924;Belo Horizonte;5,0;633;Japonesa;44;52,14
+925;Restaurante 925;Belo Horizonte;4,7;607;Japonesa;31;62,86
+926;Restaurante 926;Rio de Janeiro;4,3;116;Italiana;46;56,23
+927;Restaurante 927;Brasilia;4,9;326;Japonesa;25;67,99
+928;Restaurante 928;Rio de Janeiro;3,2;575;Pizza;42;71,06
+929;Restaurante 929;Rio de Janeiro;3,2;492;Hamburguer;24;33,66
+930;Restaurante 930;Sao Paulo;3,4;1066;Pizza;35;74,82
+931;Restaurante 931;Porto Alegre;3,4;321;Brasileira;37;26,88
+932;Restaurante 932;Porto Alegre;3,9;907;Brasileira;36;61,12
+933;Restaurante 933;Brasilia;4,3;843;Japonesa;26;55,94
+934;Restaurante 934;Porto Alegre;3,5;679;Italiana;47;36,43
+935;Restaurante 935;Sao Paulo;4,0;687;Italiana;29;40,63
+936;Restaurante 936;Brasilia;4,2;254;Brasileira;45;70,26
+937;Restaurante 937;Sao Paulo;4,0;958;Japonesa;48;63,45
+938;Restaurante 938;Sao Paulo;3,7;510;Hamburguer;36;32,48
+939;Restaurante 939;Rio de Janeiro;3,3;269;Japonesa;44;42,39
+940;Restaurante 940;Rio de Janeiro;4,6;1077;Hamburguer;34;65,02
+941;Restaurante 941;Sao Paulo;4,6;394;Hamburguer;46;28,88
+942;Restaurante 942;Rio de Janeiro;4,8;155;Brasileira;33;47,38
+943;Restaurante 943;Belo Horizonte;3,8;821;Pizza;39;46,45
+944;Restaurante 944;Sao Paulo;4,3;125;Hamburguer;40;28,16
+945;Restaurante 945;Brasilia;4,9;668;Italiana;44;48,67
+946;Restaurante 946;Belo Horizonte;4,4;546;Brasileira;42;57,05
+947;Restaurante 947;Rio de Janeiro;4,0;725;Brasileira;34;37,01
+948;Restaurante 948;Sao Paulo;3,5;144;Hamburguer;24;64,40
+949;Restaurante 949;Sao Paulo;4,6;199;Italiana;21;42,07
+950;Restaurante 950;Sao Paulo;3,6;303;Brasileira;23;48,00
+951;Restaurante 951;Brasilia;3,2;976;Pizza;40;33,84
+952;Restaurante 952;Belo Horizonte;3,2;804;Japonesa;36;39,01
+953;Restaurante 953;Belo Horizonte;3,3;743;Hamburguer;46;39,51
+954;Restaurante 954;Belo Horizonte;3,3;966;Japonesa;48;31,81
+955;Restaurante 955;Rio de Janeiro;4,6;154;Pizza;24;59,52
+956;Restaurante 956;Porto Alegre;3,7;868;Brasileira;31;74,56
+957;Restaurante 957;Belo Horizonte;4,9;768;Italiana;47;35,16
+958;Restaurante 958;Sao Paulo;4,1;692;Pizza;40;30,29
+959;Restaurante 959;Belo Horizonte;3,5;671;Brasileira;45;33,61
+960;Restaurante 960;Brasilia;4,8;340;Italiana;38;30,54
+961;Restaurante 961;Porto Alegre;4,7;262;Hamburguer;28;28,76
+962;Restaurante 962;Sao Paulo;4,4;123;Pizza;27;55,95
+963;Restaurante 963;Sao Paulo;4,0;588;Japonesa;24;68,46
+964;Restaurante 964;Porto Alegre;3,1;512;Pizza;49;41,13
+965;Restaurante 965;Porto Alegre;4,3;894;Italiana;23;31,77
+966;Restaurante 966;Sao Paulo;3,6;137;Italiana;42;63,14
+967;Restaurante 967;Sao Paulo;3,7;875;Brasileira;26;41,82
+968;Restaurante 968;Belo Horizonte;4,5;165;Italiana;33;35,86
+969;Restaurante 969;Sao Paulo;3,4;250;Pizza;39;62,71
+970;Restaurante 970;Belo Horizonte;3,4;353;Italiana;30;44,61
+971;Restaurante 971;Belo Horizonte;4,2;138;Brasileira;21;71,23
+972;Restaurante 972;Brasilia;3,8;429;Japonesa;30;68,32
+973;Restaurante 973;Belo Horizonte;4,1;968;Italiana;41;56,77
+974;Restaurante 974;Porto Alegre;4,8;520;Japonesa;28;48,60
+975;Restaurante 975;Rio de Janeiro;3,8;372;Pizza;32;65,13
+976;Restaurante 976;Belo Horizonte;4,0;326;Italiana;35;27,92
+977;Restaurante 977;Porto Alegre;3,3;163;Brasileira;31;64,72
+978;Restaurante 978;Brasilia;3,1;368;Japonesa;32;41,44
+979;Restaurante 979;Belo Horizonte;3,9;645;Japonesa;25;25,75
+980;Restaurante 980;Belo Horizonte;3,9;275;Hamburguer;48;59,56
+981;Restaurante 981;Brasilia;4,5;639;Brasileira;39;66,00
+982;Restaurante 982;Porto Alegre;3,7;342;Pizza;31;40,68
+983;Restaurante 983;Sao Paulo;3,5;465;Japonesa;20;28,72
+984;Restaurante 984;Rio de Janeiro;4,1;208;Pizza;27;66,42
+985;Restaurante 985;Sao Paulo;4,3;1048;Japonesa;44;71,16
+986;Restaurante 986;Brasilia;4,9;799;Japonesa;41;43,67
+987;Restaurante 987;Porto Alegre;3,7;1012;Italiana;25;54,51
+988;Restaurante 988;Sao Paulo;3,3;305;Pizza;37;70,67
+989;Restaurante 989;Porto Alegre;3,7;771;Pizza;46;38,49
+990;Restaurante 990;Brasilia;3,1;374;Italiana;28;26,68
+991;Restaurante 991;Porto Alegre;4,3;763;Italiana;34;46,57
+992;Restaurante 992;Belo Horizonte;4,3;459;Brasileira;20;57,23
+993;Restaurante 993;Belo Horizonte;3,8;266;Japonesa;41;29,93
+994;Restaurante 994;Rio de Janeiro;3,0;527;Italiana;37;39,59
+995;Restaurante 995;Porto Alegre;3,8;624;Italiana;40;71,22
+996;Restaurante 996;Porto Alegre;4,8;288;Pizza;45;25,54
+997;Restaurante 997;Sao Paulo;3,4;979;Pizza;46;31,23
+998;Restaurante 998;Sao Paulo;4,7;494;Brasileira;39;70,96
+999;Restaurante 999;Rio de Janeiro;4,5;817;Pizza;33;54,38
+1000;Restaurante 1000;Rio de Janeiro;4,2;718;Japonesa;44;74,31
