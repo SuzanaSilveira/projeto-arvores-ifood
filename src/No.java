@@ -1,17 +1,19 @@
 package src;
 
-class No {
+public class No { // Adicione 'public' aqui!
     int chave;
     int dados;
-    No esquerda, direita, pai;
+    No esquerda;
+    No direita;
     int altura;
-    int cor; // 0 = preto, 1 = vermelho
+    public No pai;
+    public int cor;
 
     public No(int chave, int dados) {
         this.chave = chave;
         this.dados = dados;
-        this.esquerda = this.direita = this.pai = null;
         this.altura = 1;
-        this.cor = 1; // Novo nó sempre vermelho
+        this.esquerda = null;
+        this.direita = null;
     }
 }

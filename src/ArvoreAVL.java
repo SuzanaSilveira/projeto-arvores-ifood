@@ -1,36 +1,8 @@
 package src;
 
-class No {
-    int chave;
-    int dados;
-    No esquerda;
-    No direita;
-    int altura;
-    public No pai;
-    public int cor;
 
-    public No(int chave, int dados) {
-        this.chave = chave;
-        this.dados = dados;
-        this.altura = 1;
-        this.esquerda = null;
-        this.direita = null;
-    }
-}
 
-interface Arvore {
-    void inserir(int chave, int dados);
 
-    Integer buscar(int chave);
-
-    int altura();
-
-    int getContadorComparacoes();
-
-    void resetarContadorComparacoes();
-
-    void remover(int chave);
-}
 
 class ArvoreAVL implements Arvore {
     private No raiz;
