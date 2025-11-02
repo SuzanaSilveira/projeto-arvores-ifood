@@ -1,20 +1,12 @@
 @echo off
-echo ==================================================
-echo     EXECUTANDO ANALISE ARVORES IFOOD
-echo ==================================================
-echo.
+ECHO ==========================================
+ECHO EXECUTANDO ANALISE ARVORES IFOOD
+ECHO ==========================================
 
-if not exist ..\bin (
-    echo ❌ Pasta de binarios (..\bin) nao encontrada!
-    echo 📦 Execute compile.bat primeiro!
-    pause
-    exit /b 1
-)
+REM ** O comando 'java' deve ser capaz de ser executado a partir do PATH do Windows.
+REM ** O '-cp ..\bin' define o caminho para a pasta 'bin' (um nível acima) como Classpath.
+REM ** 'AnaliseArvores' é o nome da classe principal.
 
-echo 🚀 Executando analise...
-REM O Classpath (cp) aponta para o diretorio raiz do codigo compilado (..\bin).
-REM A classe principal precisa do nome completo do pacote: src.AnaliseArvores.
-java -cp "..\bin" src.AnaliseArvores
+java -cp ..\bin AnaliseArvores
 
-echo.
-pause
+PAUSE
