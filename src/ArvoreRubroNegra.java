@@ -10,12 +10,10 @@ class ArvoreRubroNegra implements Arvore {
         this.raiz = null;
         this.contadorComparacoes = 0;
     }
-    
-    // =========================================================================
-    // MÉTODOS AUXILIARES: ROTINA DE ROTAÇÃO E RECOLORAÇÃO
-    // =========================================================================
 
-    // Troca referências do nó X com o nó Y (seu filho)
+    // MÉTODOS AUXILIARES: ROTINA DE ROTAÇÃO E RECOLORAÇÃO
+
+    // Troca referências do nó X com o nó Y na árvore
     private void transplantar(No u, No v) {
         if (u.pai == null) {
             this.raiz = v;
@@ -36,7 +34,7 @@ class ArvoreRubroNegra implements Arvore {
             y.esquerda.pai = x;
         }
         y.pai = x.pai;
-        transplantar(x, y); // Garante que as referências do pai/raiz sejam atualizadas
+        transplantar(x, y); // Garante que as referências da raiz sejam atualizadas
         y.esquerda = x;
         x.pai = y;
     }
@@ -48,7 +46,7 @@ class ArvoreRubroNegra implements Arvore {
             y.direita.pai = x;
         }
         y.pai = x.pai;
-        transplantar(x, y); // Garante que as referências do pai/raiz sejam atualizadas
+        transplantar(x, y); // Garante que as referências da raiz sejam atualizadas
         y.pai = x.pai;
         y.direita = x;
         x.pai = y;
@@ -61,7 +59,8 @@ class ArvoreRubroNegra implements Arvore {
             No p = z.pai; // Pai
             No g = p.pai; // Avô
 
-            // Garante que o avô existe (se o pai for vermelho, o avô deve ser preto e existir)
+            // Garante que o avô existe (se o pai for vermelho, o avô deve ser preto e
+            // existir)
             if (g == null) {
                 break;
             }
@@ -110,16 +109,14 @@ class ArvoreRubroNegra implements Arvore {
         }
         this.raiz.cor = preto;
     }
-    
-    // =========================================================================
+
     // MÉTODOS DA INTERFACE (MANTIDOS E CORRIGIDOS PARA SEREM ITERATIVOS)
-    // =========================================================================
 
     @Override
     public void inserir(int chave, int dados) {
-        No novoNo = new No(chave, dados); 
+        No novoNo = new No(chave, dados);
         novoNo.cor = vermelho; // Novo nó sempre começa vermelho
-        
+
         No y = null; // Pai do novoNo
         No x = this.raiz;
 
@@ -135,7 +132,7 @@ class ArvoreRubroNegra implements Arvore {
         }
 
         novoNo.pai = y;
-        
+
         if (y == null) {
             this.raiz = novoNo;
         } else if (novoNo.chave < y.chave) {
@@ -148,13 +145,15 @@ class ArvoreRubroNegra implements Arvore {
         balancearAposInsercao(novoNo);
     }
 
-    // [Os métodos buscar, altura, getContadorComparacoes, etc., são os mesmos da sua versão.]
+    // [Os métodos buscar, altura, getContadorComparacoes, etc., são os mesmos da
+    // sua versão.]
     @Override
     public Integer buscar(int chave) {
         // ... (Seu código de busca)
         return buscarRecursivo(raiz, chave);
     }
-     private Integer buscarRecursivo(No no, int chave) {
+
+    private Integer buscarRecursivo(No no, int chave) {
         contadorComparacoes++;
         if (no == null)
             return null;
