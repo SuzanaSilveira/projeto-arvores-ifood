@@ -222,7 +222,7 @@ public class AnaliseArvores {
         System.out.println("──────────────────────────────────────────────────");
 
         int[] faixas = new int[5];
-        String[] labels = { "0-2.9 ", "3.0-3.4 ", "3.5-3.9 ", "4.0-4.4 ", "4.5-5.0 " };
+        String[] labels = { "0-2.9 ", "3.0-3.4", "3.5-3.9", "4.0-4.4", "4.5-5.0" };
 
         for (Restaurante r : restaurantes) {
             if (r.avaliacaoMedia < 3.0)
@@ -239,7 +239,7 @@ public class AnaliseArvores {
 
         for (int i = 0; i < faixas.length; i++) {
             double percentual = (faixas[i] * 100.0) / restaurantes.size();
-            System.out.printf("• %-15s: %4d (%5.1f%%)\n", labels[i], faixas[i], percentual);
+            System.out.printf(" %-15s: %4d (%5.1f%%)\n", labels[i], faixas[i], percentual);
         }
     }
 
