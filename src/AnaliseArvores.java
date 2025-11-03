@@ -27,31 +27,31 @@ public class AnaliseArvores {
     }
 
     private static void inicializarEstruturas() {
-        System.out.println("🔄 INICIALIZANDO ESTRUTURAS DE DADOS...");
+        System.out.println("INICIALIZANDO ESTRUTURAS DE DADOS...");
         abb = new ArvoreBinariaBusca();
         avl = new ArvoreAVL();
         arn = new ArvoreRubroNegra();
         restaurantes = new ArrayList<>();
-        System.out.println("✅ Árvores inicializadas: ABB, AVL e Rubro-Negra");
+        System.out.println(" Árvores inicializadas: ABB, AVL e Rubro-Negra");
     }
 
     private static void carregarDataset() {
-        System.out.println("\n📊 CARREGANDO DATASET iFOOD...");
+        System.out.println("\n CARREGANDO DATASET iFOOD...");
         restaurantes = CarregadorDataset.carregarRestaurantes();
 
         if (restaurantes.isEmpty()) {
-            System.out.println("❌ ERRO: Não foi possível carregar o dataset!");
+            System.out.println(" ERRO: Não foi possível carregar o dataset!");
             System.exit(1);
         }
 
-        System.out.println("✅ Dataset carregado com sucesso!");
+        System.out.println("Dataset carregado com sucesso!");
         System.out.println("   • Total de restaurantes: " + restaurantes.size());
 
         mostrarEstatisticasDataset();
     }
 
     private static void mostrarEstatisticasDataset() {
-        System.out.println("\n📈 ESTATÍSTICAS DO DATASET:");
+        System.out.println("\nESTATÍSTICAS DO DATASET:");
         System.out.println("──────────────────────────────────────────────────");
 
         double mediaAvaliacao = restaurantes.stream()
@@ -64,8 +64,8 @@ public class AnaliseArvores {
                 .average()
                 .orElse(0.0);
 
-        System.out.printf("• Avaliação média: ⭐ %.2f/5.0\n", mediaAvaliacao);
-        System.out.printf("• Tempo de entrega médio: 🕒 %.1f min\n", mediaTempoEntrega);
+        System.out.printf("• Avaliação média:  %.2f/5.0\n", mediaAvaliacao);
+        System.out.printf("• Tempo de entrega médio:  %.1f min\n", mediaTempoEntrega);
 
         System.out.println("\n AMOSTRA DE DADOS (primeiros 3 registros):");
         System.out.println("──────────────────────────────────────────────────");
@@ -80,15 +80,15 @@ public class AnaliseArvores {
         System.out.println("         TESTES DE PERFORMANCE DAS ÁRVORES");
         System.out.println("=".repeat(60));
 
-        System.out.println("\n🔧 TESTE DE INSERÇÃO EM LOTE:");
+        System.out.println("\n TESTE DE INSERÇÃO EM LOTE:");
         System.out.println("──────────────────────────────────────────────────");
         testarInsercaoEmLote();
 
-        System.out.println("\n🔍 TESTE DE BUSCA ALEATÓRIA:");
+        System.out.println("\n TESTE DE BUSCA ALEATÓRIA:");
         System.out.println("──────────────────────────────────────────────────");
         testarBuscaAleatoria();
 
-        System.out.println("\n📐 MÉTRICAS DE ESTRUTURA:");
+        System.out.println("\n MÉTRICAS DE ESTRUTURA:");
         System.out.println("──────────────────────────────────────────────────");
         mostrarMetricasEstrutura();
     }
@@ -196,7 +196,7 @@ public class AnaliseArvores {
     }
 
     private static void analisarDistribuicaoTiposComida() {
-        System.out.println("\n🍕 DISTRIBUIÇÃO POR TIPO DE COMIDA:");
+        System.out.println("\n DISTRIBUIÇÃO POR TIPO DE COMIDA:");
         System.out.println("──────────────────────────────────────────────────");
 
         Map<String, Integer> contagem = new HashMap<>();
@@ -218,11 +218,11 @@ public class AnaliseArvores {
     }
 
     private static void analisarAvaliacoes() {
-        System.out.println("\n⭐ DISTRIBUIÇÃO DE AVALIAÇÕES:");
+        System.out.println("\n DISTRIBUIÇÃO DE AVALIAÇÕES:");
         System.out.println("──────────────────────────────────────────────────");
 
         int[] faixas = new int[5];
-        String[] labels = { "0-2.9 ⭐", "3.0-3.4 ⭐⭐", "3.5-3.9 ⭐⭐⭐", "4.0-4.4 ⭐⭐⭐⭐", "4.5-5.0 ⭐⭐⭐⭐⭐" };
+        String[] labels = { "0-2.9 ", "3.0-3.4 ", "3.5-3.9 ", "4.0-4.4 ", "4.5-5.0 " };
 
         for (Restaurante r : restaurantes) {
             if (r.avaliacaoMedia < 3.0)
@@ -260,7 +260,7 @@ public class AnaliseArvores {
         if (restaurantes.size() < 5)
             return;
 
-        System.out.println("\n🎯 DEMONSTRAÇÃO DE BUSCA:");
+        System.out.println("\n DEMONSTRAÇÃO DE BUSCA:");
         System.out.println("──────────────────────────────────────────────────");
 
         Restaurante exemplo = restaurantes.get(0);

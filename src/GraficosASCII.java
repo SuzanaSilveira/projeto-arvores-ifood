@@ -22,7 +22,7 @@ public class GraficosASCII {
             ArvoreAVL avl,
             ArvoreRubroNegra arn) {
 
-        System.out.println("\n📊 GRÁFICO DE BARRAS - ALTURAS DAS ÁRVORES");
+        System.out.println("\n GRÁFICO DE BARRAS - ALTURAS DAS ÁRVORES");
         System.out.println("    (Cada ■ representa 1 unidade de altura)");
         System.out.println("─".repeat(60));
 
@@ -40,7 +40,7 @@ public class GraficosASCII {
             ArvoreAVL avl,
             ArvoreRubroNegra arn) {
 
-        System.out.println("\n⚖️  GRÁFICO DE BALANCEAMENTO");
+        System.out.println("\n GRÁFICO DE BALANCEAMENTO");
         System.out.println("    (Quanto mais próximo de 100%, mais balanceada)");
         System.out.println("─".repeat(60));
 
@@ -64,7 +64,7 @@ public class GraficosASCII {
             ArvoreAVL avl,
             ArvoreRubroNegra arn) {
 
-        System.out.println("\n🎯 COMPARAÇÃO DE DESEMPENHO RELATIVO");
+        System.out.println("\n COMPARAÇÃO DE DESEMPENHO RELATIVO");
         System.out.println("    (Baseado na altura - menor altura = melhor)");
         System.out.println("─".repeat(60));
 
@@ -72,7 +72,7 @@ public class GraficosASCII {
         int menorAltura = Arrays.stream(alturas).min().getAsInt();
 
         String[] nomes = { "ABB", "AVL", "Rubro-Negra" };
-        String[] emojis = { "🔴", "🟢", "🔵" };
+        String[] emojis = { "x", "y", "z" };
 
         for (int i = 0; i < 3; i++) {
             double desempenho = (double) menorAltura / alturas[i] * 100;
@@ -80,7 +80,7 @@ public class GraficosASCII {
 
             System.out.printf("%s %-15s: %-25s %5.1f%%\n",
                     emojis[i], nomes[i],
-                    "▇".repeat(barras),
+                    "q".repeat(barras),
                     desempenho);
         }
     }

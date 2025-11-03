@@ -1,28 +1,20 @@
 @echo off
-echo ==================================================
-echo     COMPILANDO PROJETO ARVORES iFOOD
-echo ==================================================
-echo.
+ECHO ==================================================
+ECHO       COMPILANDO PROJETO ARVORES iFOOD
+ECHO ==================================================
 
-REM --- 1. Cria a pasta 'bin' se ela não existir ---
-if not exist bin mkdir bin
+REM --- 1. Limpeza de classes antigas (mantida para garantir a versão 17) ---
+del ..\bin\src\*.class 2>nul
+del ..\bin\*.class 2>nul
+if not exist ..\bin mkdir ..\bin
 
-echo Compilando classes...
-echo.
+echo Compilando classes para compatibilidade com Java 17 (versao 61.0)...
 
-REM --- 2. Compila os arquivos de forma robusta sem usar a pasta Lib ---
-REM O FOR resolve o problema do curinga *.java em ambientes como PowerShell.
-cd src
-
-FOR %%f IN (*.java) DO (
-    javac -d ..\bin %%f
-)
-
-REM --- 3. Volta para a pasta 'Batch' ---
-cd ..\Batch
+REM --- 2. Compilação com Target 17 E Encoding UTF-8 (soluciona o erro de caractere) ---
+javac -d ..\bin -source 17 -target 17 -encoding UTF-8 ..\src\*.java
 
 echo.
-echo Compilacao concluida (verifique os erros acima).
+echo Compilacao concluida.
 echo Arquivos compilados na pasta 'bin'
 echo.
 
