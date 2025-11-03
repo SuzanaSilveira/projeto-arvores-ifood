@@ -110,7 +110,7 @@ class ArvoreRubroNegra implements Arvore {
         this.raiz.cor = preto;
     }
 
-    // MÉTODOS DA INTERFACE (MANTIDOS E CORRIGIDOS PARA SEREM ITERATIVOS)
+    // MÉTODOS DA INTERFACE
 
     @Override
     public void inserir(int chave, int dados) {

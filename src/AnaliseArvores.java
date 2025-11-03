@@ -45,7 +45,7 @@ public class AnaliseArvores {
         }
 
         System.out.println("Dataset carregado com sucesso!");
-        System.out.println("   • Total de restaurantes: " + restaurantes.size());
+        System.out.println("   Total de restaurantes: " + restaurantes.size());
 
         mostrarEstatisticasDataset();
     }
@@ -64,8 +64,8 @@ public class AnaliseArvores {
                 .average()
                 .orElse(0.0);
 
-        System.out.printf("• Avaliação média:  %.2f/5.0\n", mediaAvaliacao);
-        System.out.printf("• Tempo de entrega médio:  %.1f min\n", mediaTempoEntrega);
+        System.out.printf(" Avaliação média:  %.2f/5.0\n", mediaAvaliacao);
+        System.out.printf(" Tempo de entrega médio:  %.1f min\n", mediaTempoEntrega);
 
         System.out.println("\n AMOSTRA DE DADOS (primeiros 3 registros):");
         System.out.println("──────────────────────────────────────────────────");
@@ -274,9 +274,9 @@ public class AnaliseArvores {
 
         System.out.println("\n CONCLUSÕES FINAIS:");
         System.out.println("──────────────────────────────────────────────────");
-        System.out.println("• ABB:  Mais rápida na inserção");
-        System.out.println("• AVL:  Melhor balanceamento geral");
-        System.out.println("• RN:   Equilíbrio entre operações");
-        System.out.println("• Dataset iFood: Análise real de desempenho");
+        System.out.println(" ABB:  Mais rápida na inserção");
+        System.out.println(" AVL:  Melhor balanceamento geral");
+        System.out.println(" RN:   Equilíbrio entre operações");
+        System.out.println(" Dataset iFood: Análise real de desempenho");
     }
 }

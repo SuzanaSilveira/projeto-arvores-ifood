@@ -4,8 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class CarregadorDataset {
-    // CORREÇÃO: Adicionado "../" para subir da pasta Batch para o diretório raiz
-    // antes de entrar em data/
+
     private static final String CAMINHO_DATASET = "../data/dados_ifood.csv";
 
     public static List<Restaurante> carregarRestaurantes() {
@@ -39,7 +38,7 @@ public class CarregadorDataset {
                                 idRestaurante, nomeRestaurante, cidade, avaliacaoMedia,
                                 totalAvaliacoes, tipoComida, tempoEntregaMedio, precoMedio));
                     } catch (Exception e) {
-                        // Ignora linhas com erro de parsing
+
                     }
                 }
             }
