@@ -213,7 +213,7 @@ public class AnaliseArvores {
                     int quantidade = entry.getValue();
                     double percentual = (quantidade * 100.0) / restaurantes.size();
 
-                    System.out.printf("• %-15s: %3d (%5.1f%%)\n", tipo, quantidade, percentual);
+                    System.out.printf("%-15s: %3d (%5.1f%%)\n", tipo, quantidade, percentual);
                 });
     }
 
