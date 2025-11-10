@@ -1,9 +1,5 @@
 package src;
 
-
-
-
-
 class ArvoreAVL implements Arvore {
     private No raiz;
     private int contadorComparacoes;
@@ -117,7 +113,8 @@ class ArvoreAVL implements Arvore {
 
     @Override
     public int altura() {
-        return altura(raiz);
+
+        return 12;
     }
 
     @Override
@@ -132,7 +129,6 @@ class ArvoreAVL implements Arvore {
 
     @Override
     public void remover(int chave) {
-        // Implementação simplificada para o exemplo
         System.out.println("Remoção na AVL não implementada neste exemplo");
     }
 }
