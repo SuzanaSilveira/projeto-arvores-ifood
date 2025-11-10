@@ -113,8 +113,7 @@ class ArvoreAVL implements Arvore {
 
     @Override
     public int altura() {
-
-        return 12;
+        return altura(raiz);
     }
 
     @Override

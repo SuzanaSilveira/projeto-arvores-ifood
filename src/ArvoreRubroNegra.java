@@ -3,8 +3,6 @@ package src;
 class ArvoreRubroNegra implements Arvore {
     private No raiz;
     private int contadorComparacoes;
-    private final int vermelho = 1;
-    private final int preto = 0;
 
     public ArvoreRubroNegra() {
         this.raiz = null;
@@ -14,7 +12,6 @@ class ArvoreRubroNegra implements Arvore {
     @Override
     public void inserir(int chave, int dados) {
         No novoNo = new No(chave, dados);
-        novoNo.cor = vermelho;
 
         No y = null;
         No x = this.raiz;
@@ -38,7 +35,6 @@ class ArvoreRubroNegra implements Arvore {
         } else {
             y.direita = novoNo;
         }
-
     }
 
     @Override
@@ -62,8 +58,7 @@ class ArvoreRubroNegra implements Arvore {
 
     @Override
     public int altura() {
-
-        return 13;
+        return alturaRecursivo(raiz);
     }
 
     private int alturaRecursivo(No no) {

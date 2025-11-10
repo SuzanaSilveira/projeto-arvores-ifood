@@ -8,6 +8,12 @@ public class AnaliseArvores {
     private static ArvoreAVL avl;
     private static ArvoreRubroNegra arn;
 
+    // Variáveis para armazenar resultados dos testes
+    private static double tempoInsercaoABB, tempoInsercaoAVL, tempoInsercaoRN;
+    private static int comparacoesInsercaoABB, comparacoesInsercaoAVL, comparacoesInsercaoRN;
+    private static double tempoBuscaABB, tempoBuscaAVL, tempoBuscaRN;
+    private static double comparacoesBuscaABB, comparacoesBuscaAVL, comparacoesBuscaRN;
+
     public static void main(String[] args) {
         System.out.println("==================================================");
         System.out.println("    ANÁLISE DE ÁRVORES - DATASET iFOOD");
@@ -80,9 +86,6 @@ public class AnaliseArvores {
         System.out.println("         TESTES DE PERFORMANCE DAS ÁRVORES");
         System.out.println("=".repeat(60));
 
-        // Inserir dados reais nas árvores
-        inserirDadosReais();
-
         System.out.println("\n TESTE DE INSERÇÃO EM LOTE:");
         System.out.println("──────────────────────────────────────────────────");
         testarInsercaoEmLote();
@@ -96,52 +99,113 @@ public class AnaliseArvores {
         mostrarMetricasEstrutura();
     }
 
-    private static void inserirDadosReais() {
-        // Inserir dados reais para construção das árvores
+    private static void testarInsercaoEmLote() {
+        Metricas metricas = new Metricas();
+
+        // Testar ABB
+        metricas.iniciarTemporizador();
+        abb.resetarContadorComparacoes();
         for (Restaurante r : restaurantes) {
             abb.inserir(r.idRestaurante, r.tempoEntregaMedio);
+        }
+        metricas.pararTemporizador();
+        tempoInsercaoABB = metricas.getTempoDecorridoMillis();
+        comparacoesInsercaoABB = abb.getContadorComparacoes();
+        System.out.printf("ABB  - Tempo: %8.2f ms | Comparações: %8d | Altura: %2d\n",
+                tempoInsercaoABB, comparacoesInsercaoABB, abb.altura());
+
+        // Testar AVL
+        metricas.iniciarTemporizador();
+        avl.resetarContadorComparacoes();
+        for (Restaurante r : restaurantes) {
             avl.inserir(r.idRestaurante, r.tempoEntregaMedio);
+        }
+        metricas.pararTemporizador();
+        tempoInsercaoAVL = metricas.getTempoDecorridoMillis();
+        comparacoesInsercaoAVL = avl.getContadorComparacoes();
+        System.out.printf("AVL  - Tempo: %8.2f ms | Comparações: %8d | Altura: %2d\n",
+                tempoInsercaoAVL, comparacoesInsercaoAVL, avl.altura());
+
+        // Testar Rubro-Negra
+        metricas.iniciarTemporizador();
+        arn.resetarContadorComparacoes();
+        for (Restaurante r : restaurantes) {
             arn.inserir(r.idRestaurante, r.tempoEntregaMedio);
         }
-    }
-
-    private static void testarInsercaoEmLote() {
-
-        System.out.printf("ABB  - Tempo: %7.1f ms | Comparações: %8d | Altura: %2d\n",
-                45.3, 14300, abb.altura());
-
-        System.out.printf("AVL  - Tempo: %7.1f ms | Comparações: %8d | Altura: %2d\n",
-                52.1, 12800, avl.altura());
-
-        System.out.printf("RN   - Tempo: %7.1f ms | Comparações: %8d | Altura: %2d\n",
-                48.7, 13100, arn.altura());
+        metricas.pararTemporizador();
+        tempoInsercaoRN = metricas.getTempoDecorridoMillis();
+        comparacoesInsercaoRN = arn.getContadorComparacoes();
+        System.out.printf("RN   - Tempo: %8.2f ms | Comparações: %8d | Altura: %2d\n",
+                tempoInsercaoRN, comparacoesInsercaoRN, arn.altura());
     }
 
     private static void testarBuscaAleatoria() {
+        Random random = new Random();
+        int numBuscas = Math.min(1000, restaurantes.size());
+        Metricas metricas = new Metricas();
 
-        System.out.printf("ABB  - Tempo: %9.3f ms/busca | Comparações: %5.1f/busca\n",
-                4.52, 14.3);
+        int[] chavesBusca = new int[numBuscas];
+        for (int i = 0; i < numBuscas; i++) {
+            chavesBusca[i] = restaurantes.get(random.nextInt(restaurantes.size())).idRestaurante;
+        }
 
-        System.out.printf("AVL  - Tempo: %9.3f ms/busca | Comparações: %5.1f/busca\n",
-                3.12, 12.8);
+        // Testar ABB
+        metricas.iniciarTemporizador();
+        abb.resetarContadorComparacoes();
+        for (int chave : chavesBusca) {
+            abb.buscar(chave);
+        }
+        metricas.pararTemporizador();
+        tempoBuscaABB = (metricas.getTempoDecorridoMillis() / numBuscas) * 1000; // Converter para μs
+        comparacoesBuscaABB = abb.getContadorComparacoes() / (double) numBuscas;
+        System.out.printf("ABB  - Tempo: %8.3f ms/busca | Comparações: %6.2f/busca\n",
+                tempoBuscaABB, comparacoesBuscaABB);
 
-        System.out.printf("RN   - Tempo: %9.3f ms/busca | Comparações: %5.1f/busca\n",
-                3.45, 13.1);
+        // Testar AVL
+        metricas.iniciarTemporizador();
+        avl.resetarContadorComparacoes();
+        for (int chave : chavesBusca) {
+            avl.buscar(chave);
+        }
+        metricas.pararTemporizador();
+        tempoBuscaAVL = (metricas.getTempoDecorridoMillis() / numBuscas) * 1000;
+        comparacoesBuscaAVL = avl.getContadorComparacoes() / (double) numBuscas;
+        System.out.printf("AVL  - Tempo: %8.3f ms/busca | Comparações: %6.2f/busca\n",
+                tempoBuscaAVL, comparacoesBuscaAVL);
+
+        // Testar Rubro-Negra
+        metricas.iniciarTemporizador();
+        arn.resetarContadorComparacoes();
+        for (int chave : chavesBusca) {
+            arn.buscar(chave);
+        }
+        metricas.pararTemporizador();
+        tempoBuscaRN = (metricas.getTempoDecorridoMillis() / numBuscas) * 1000;
+        comparacoesBuscaRN = arn.getContadorComparacoes() / (double) numBuscas;
+        System.out.printf("RN   - Tempo: %8.3f ms/busca | Comparações: %6.2f/busca\n",
+                tempoBuscaRN, comparacoesBuscaRN);
     }
 
     private static void mostrarMetricasEstrutura() {
-        double alturaIdeal = 10.0;
+        int totalElementos = restaurantes.size();
+        double alturaIdeal = Math.floor(Math.log(totalElementos + 1) / Math.log(2));
+
         System.out.printf("Altura ideal teórica: %.1f\n", alturaIdeal);
         System.out.println();
 
+        // Calcular balanceamento real
+        double balanceamentoABB = (alturaIdeal / abb.altura()) * 100;
+        double balanceamentoAVL = (alturaIdeal / avl.altura()) * 100;
+        double balanceamentoRN = (alturaIdeal / arn.altura()) * 100;
+
         System.out.printf("ABB  - Altura: %2d | Balanceamento: %5.1f%%\n",
-                abb.altura(), 47.8);
+                abb.altura(), balanceamentoABB);
 
         System.out.printf("AVL  - Altura: %2d | Balanceamento: %5.1f%%\n",
-                avl.altura(), 89.2);
+                avl.altura(), balanceamentoAVL);
 
         System.out.printf("RN   - Altura: %2d | Balanceamento: %5.1f%%\n",
-                arn.altura(), 83.6);
+                arn.altura(), balanceamentoRN);
     }
 
     private static void realizarAnalisesEspecificas() {
@@ -207,7 +271,10 @@ public class AnaliseArvores {
         System.out.println("=".repeat(60));
 
         GraficosASCII.gerarGraficosASCII(restaurantes, abb, avl, arn);
-        GraficosASCII.gerarTabelaComparativa(restaurantes, abb, avl, arn);
+        GraficosASCII.gerarTabelaComparativa(restaurantes, abb, avl, arn,
+                tempoInsercaoABB, tempoInsercaoAVL, tempoInsercaoRN,
+                tempoBuscaABB, tempoBuscaAVL, tempoBuscaRN,
+                comparacoesBuscaABB, comparacoesBuscaAVL, comparacoesBuscaRN);
     }
 
     private static void demonstrarOperacoes() {
@@ -232,9 +299,11 @@ public class AnaliseArvores {
 
         System.out.println("\n CONCLUSÕES FINAIS:");
         System.out.println("──────────────────────────────────────────────────");
-        System.out.println(" ABB:  Mais rápida na inserção (45.3 ms)");
-        System.out.println(" AVL:  Melhor balanceamento (89.2%) e busca (3.12 ms)");
+        System.out.printf(" ABB:  Mais rápida na inserção (%.2f ms)\n", tempoInsercaoABB);
+        System.out.printf(" AVL:  Melhor balanceamento (%.1f%%) e busca (%.3f ms)\n",
+                (Math.floor(Math.log(restaurantes.size() + 1) / Math.log(2)) / avl.altura()) * 100,
+                tempoBuscaAVL);
         System.out.println(" RN:   Equilíbrio entre operações");
-        System.out.println(" Dataset iFood: Análise completa com " + restaurantes.size() + " registros");
+        System.out.printf(" Dataset iFood: Análise completa com %d registros\n", restaurantes.size());
     }
 }

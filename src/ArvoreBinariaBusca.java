@@ -94,8 +94,7 @@ class ArvoreBinariaBusca implements Arvore {
 
     @Override
     public int altura() {
-
-        return 15;
+        return alturaRecursivo(raiz);
     }
 
     private int alturaRecursivo(No no) {
