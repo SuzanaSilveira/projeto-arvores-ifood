@@ -14,22 +14,20 @@ public class GeradorCSV {
     }
 
     public static void gerarCSV(int numRegistros, String filename) throws IOException {
-        // Criar pasta data
         File dataDir = new File("data");
         dataDir.mkdirs();
 
         PrintWriter writer = new PrintWriter(new FileWriter(filename));
 
-        // Cabecalho
-        writer.println(
-                "restaurant_id;restaurant_name;city;avg_rating;total_ratings;food_type;avg_delivery_time;avg_price");
+        // ✅ CABEÇALHO SEM ID
+        writer.println("restaurant_name;city;avg_rating;total_ratings;food_type;avg_delivery_time;avg_price");
 
         Random random = new Random();
         String[] cidades = { "Sao Paulo", "Rio de Janeiro", "Belo Horizonte", "Brasilia", "Porto Alegre" };
         String[] comidas = { "Pizza", "Hamburguer", "Japonesa", "Brasileira", "Italiana" };
 
         for (int i = 1; i <= numRegistros; i++) {
-            int id = i;
+
             String nome = "Restaurante " + i;
             String cidade = cidades[random.nextInt(cidades.length)];
             double rating = 3.0 + random.nextDouble() * 2.0;
@@ -38,7 +36,7 @@ public class GeradorCSV {
             int tempo = 20 + random.nextInt(30);
             double preco = 25 + random.nextDouble() * 50;
 
-            writer.println(id + ";" + nome + ";" + cidade + ";" +
+            writer.println(nome + ";" + cidade + ";" +
                     String.format("%.1f", rating) + ";" + totalAval + ";" +
                     tipo + ";" + tempo + ";" + String.format("%.2f", preco));
         }

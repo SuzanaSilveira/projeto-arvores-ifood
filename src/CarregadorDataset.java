@@ -6,6 +6,7 @@ import java.util.*;
 public class CarregadorDataset {
 
     private static final String CAMINHO_DATASET = "../data/dados_ifood.csv";
+    private static int contadorId = 1; // Gerar IDs automaticamente
 
     public static List<Restaurante> carregarRestaurantes() {
         List<Restaurante> restaurantes = new ArrayList<>();
@@ -21,43 +22,42 @@ public class CarregadorDataset {
                 }
 
                 String[] valores = linha.split(";");
-                // Garantir que a linha tenha pelo menos 4 valores
-                if (valores.length >= 4) {
+                if (valores.length >= 7) {
                     try {
-                        // ÍNDICES BASEADOS NA ESTRUTURA ORIGINAL:
-                        int idRestaurante = parseIntSeguro(valores[0]);
+                        // ✅ REMOVIDO: Não usar mais restaurant_id do CSV
+                        // ✅ USAR: contador automático como ID
+                        int idRestaurante = contadorId++;
                         String nomeRestaurante = getStringSeguro(valores, 1);
                         String cidade = getStringSeguro(valores, 2);
-                        double avaliacaoMedia = parseDoubleSeguro(valores, 5);
-                        int totalAvaliacoes = parseIntSeguro(valores[6]);
-                        String tipoComida = getStringSeguro(valores, 7);
-                        int tempoEntregaMedio = parseIntSeguro(valores[8]);
-                        double precoMedio = parseDoubleSeguro(valores, 9);
+                        double avaliacaoMedia = parseDoubleSeguro(valores, 3);
+                        int totalAvaliacoes = parseIntSeguro(valores[4]);
+                        String tipoComida = getStringSeguro(valores, 5);
+                        int tempoEntregaMedio = parseIntSeguro(valores[6]);
+                        double precoMedio = parseDoubleSeguro(valores, 7);
 
                         restaurantes.add(new Restaurante(
                                 idRestaurante, nomeRestaurante, cidade, avaliacaoMedia,
                                 totalAvaliacoes, tipoComida, tempoEntregaMedio, precoMedio));
                     } catch (Exception e) {
-
+                        // Ignorar linha com erro
                     }
                 }
             }
         } catch (IOException e) {
-            // Bloco de diagnóstico de erro (para ver o caminho)
             System.out.println("--------------------------------------------------");
-            System.out.println("ERRO GRAVE: Arquivo nao encontrado!");
+            System.out.println("ERRO: Arquivo não encontrado!");
             System.out.println("Caminho tentado: " + CAMINHO_DATASET);
             System.out.println("Detalhe do Erro: " + e.getMessage());
             System.out.println("--------------------------------------------------");
 
             System.out.println("Gerando dados de exemplo...");
-            restaurantes = gerarRestaurantesExemplo(10000);
+            restaurantes = gerarRestaurantesExemplo(1000);
         }
 
         return restaurantes;
     }
 
-    // Métodos auxiliares
+    // Métodos auxiliares (mantidos iguais)
     private static int parseIntSeguro(String valor) {
         try {
             return Integer.parseInt(valor.trim());
@@ -101,7 +101,6 @@ public class CarregadorDataset {
             int tempoEntregaMedio = 20 + random.nextInt(41);
             double precoMedio = 15 + random.nextDouble() * 85;
 
-            // Assumindo que a classe Restaurante existe no pacote src
             restaurantes.add(new Restaurante(
                     idRestaurante, nomeRestaurante, cidade, avaliacaoMedia,
                     totalAvaliacoes, tipoComida, tempoEntregaMedio, precoMedio));
