@@ -1,6 +1,6 @@
 package src;
 
-public class No { // Adicione 'public' aqui!
+public class No {
     int chave;
     int dados;
     No esquerda;
