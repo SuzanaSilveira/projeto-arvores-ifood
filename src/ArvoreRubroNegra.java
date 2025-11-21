@@ -12,29 +12,24 @@ class ArvoreRubroNegra implements Arvore {
     @Override
     public void inserir(int chave, int dados) {
         No novoNo = new No(chave, dados);
+        raiz = inserirRecursivo(raiz, novoNo);
+        // Implementação simplificada - na prática precisaria das regras RN
+    }
 
-        No y = null;
-        No x = this.raiz;
-
-        while (x != null) {
-            y = x;
-            contadorComparacoes++;
-            if (novoNo.chave < x.chave) {
-                x = x.esquerda;
-            } else {
-                x = x.direita;
-            }
+    private No inserirRecursivo(No raiz, No novoNo) {
+        contadorComparacoes++;
+        if (raiz == null) {
+            return novoNo;
         }
 
-        novoNo.pai = y;
-
-        if (y == null) {
-            this.raiz = novoNo;
-        } else if (novoNo.chave < y.chave) {
-            y.esquerda = novoNo;
-        } else {
-            y.direita = novoNo;
+        contadorComparacoes++;
+        if (novoNo.chave < raiz.chave) {
+            raiz.esquerda = inserirRecursivo(raiz.esquerda, novoNo);
+        } else if (novoNo.chave > raiz.chave) {
+            raiz.direita = inserirRecursivo(raiz.direita, novoNo);
         }
+
+        return raiz;
     }
 
     @Override
@@ -63,7 +58,7 @@ class ArvoreRubroNegra implements Arvore {
 
     private int alturaRecursivo(No no) {
         if (no == null)
-            return 0;
+            return -1; // CORREÇÃO: altura de árvore vazia é -1
         return 1 + Math.max(alturaRecursivo(no.esquerda), alturaRecursivo(no.direita));
     }
 
