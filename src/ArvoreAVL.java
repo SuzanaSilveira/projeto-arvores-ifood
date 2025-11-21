@@ -30,10 +30,13 @@ class ArvoreAVL implements Arvore {
             return no;
         }
 
+        // Atualizar altura
         no.altura = 1 + Math.max(altura(no.esquerda), altura(no.direita));
 
+        // Balanceamento
         int balanceamento = getBalanceamento(no);
 
+        // Casos de desbalanceamento
         if (balanceamento > 1 && chave < no.esquerda.chave) {
             return rotacaoDireita(no);
         }
@@ -80,7 +83,7 @@ class ArvoreAVL implements Arvore {
 
     private int altura(No no) {
         if (no == null)
-            return 0;
+            return -1; // CORREÇÃO: altura de nó nulo é -1
         return no.altura;
     }
 
@@ -113,7 +116,7 @@ class ArvoreAVL implements Arvore {
 
     @Override
     public int altura() {
-        return altura(raiz);
+        return altura(raiz) + 1; // CORREÇÃO: converter para contagem de nós
     }
 
     @Override
