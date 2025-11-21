@@ -99,7 +99,7 @@ class ArvoreBinariaBusca implements Arvore {
 
     private int alturaRecursivo(No no) {
         if (no == null) {
-            return 0;
+            return -1; // CORREÇÃO: altura de árvore vazia é -1
         }
         return 1 + Math.max(alturaRecursivo(no.esquerda), alturaRecursivo(no.direita));
     }
