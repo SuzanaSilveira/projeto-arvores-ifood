@@ -1,6 +1,6 @@
-package src; // 1. Adiciona a declaração de pacote
+package src; 
 
-public interface Arvore { // 2. Torna a interface pública
+public interface Arvore { //  Torna a interface pública
     void inserir(int chave, int dados);
 
     Integer buscar(int chave);
