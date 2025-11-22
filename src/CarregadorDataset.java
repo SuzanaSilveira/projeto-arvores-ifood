@@ -24,8 +24,7 @@ public class CarregadorDataset {
                 String[] valores = linha.split(";");
                 if (valores.length >= 7) {
                     try {
-                        // ✅ REMOVIDO: Não usar mais restaurant_id do CSV
-                        // ✅ USAR: contador automático como ID
+                        
                         int idRestaurante = contadorId++;
                         String nomeRestaurante = getStringSeguro(valores, 1);
                         String cidade = getStringSeguro(valores, 2);
@@ -39,7 +38,7 @@ public class CarregadorDataset {
                                 idRestaurante, nomeRestaurante, cidade, avaliacaoMedia,
                                 totalAvaliacoes, tipoComida, tempoEntregaMedio, precoMedio));
                     } catch (Exception e) {
-                        // Ignorar linha com erro
+                        
                     }
                 }
             }
