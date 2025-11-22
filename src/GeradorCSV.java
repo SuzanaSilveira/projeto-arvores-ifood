@@ -6,7 +6,7 @@ import java.util.Random;
 public class GeradorCSV {
     public static void main(String[] args) {
         try {
-            gerarCSV(1000, "data/dados_ifood.csv");
+            gerarCSV(10000, "data/dados_ifood.csv");
             System.out.println("SUCESSO: Dataset gerado!");
         } catch (Exception e) {
             System.out.println("ERRO: " + e.getMessage());
@@ -19,7 +19,7 @@ public class GeradorCSV {
 
         PrintWriter writer = new PrintWriter(new FileWriter(filename));
 
-        // ✅ CABEÇALHO SEM ID
+        
         writer.println("restaurant_name;city;avg_rating;total_ratings;food_type;avg_delivery_time;avg_price");
 
         Random random = new Random();
