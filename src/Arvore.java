@@ -1,6 +1,6 @@
 package src; 
 
-public interface Arvore { //  Torna a interface pública
+public interface Arvore {
     void inserir(int chave, int dados);
 
     Integer buscar(int chave);
