@@ -8,7 +8,6 @@ public class AnaliseArvores {
     private static ArvoreAVL avl;
     private static ArvoreRubroNegra arn;
 
-    // Variáveis para armazenar resultados dos testes
     private static double tempoInsercaoABB, tempoInsercaoAVL, tempoInsercaoRN;
     private static int comparacoesInsercaoABB, comparacoesInsercaoAVL, comparacoesInsercaoRN;
     private static double tempoBuscaABB, tempoBuscaAVL, tempoBuscaRN;
@@ -102,7 +101,7 @@ public class AnaliseArvores {
     private static void testarInsercaoEmLote() {
         Metricas metricas = new Metricas();
 
-        // Testar ABB
+        //ABB
         metricas.iniciarTemporizador();
         abb.resetarContadorComparacoes();
         for (Restaurante r : restaurantes) {
@@ -114,7 +113,7 @@ public class AnaliseArvores {
         System.out.printf("ABB  - Tempo: %8.2f ms | Comparações: %8d | Altura: %2d\n",
                 tempoInsercaoABB, comparacoesInsercaoABB, abb.altura());
 
-        // Testar AVL
+        //AVL
         metricas.iniciarTemporizador();
         avl.resetarContadorComparacoes();
         for (Restaurante r : restaurantes) {
@@ -126,7 +125,7 @@ public class AnaliseArvores {
         System.out.printf("AVL  - Tempo: %8.2f ms | Comparações: %8d | Altura: %2d\n",
                 tempoInsercaoAVL, comparacoesInsercaoAVL, avl.altura());
 
-        // Testar Rubro-Negra
+        // Rubro-Negra
         metricas.iniciarTemporizador();
         arn.resetarContadorComparacoes();
         for (Restaurante r : restaurantes) {
@@ -149,7 +148,7 @@ public class AnaliseArvores {
             chavesBusca[i] = restaurantes.get(random.nextInt(restaurantes.size())).idRestaurante;
         }
 
-        // Testar ABB
+        //ABB
         metricas.iniciarTemporizador();
         abb.resetarContadorComparacoes();
         for (int chave : chavesBusca) {
@@ -161,7 +160,7 @@ public class AnaliseArvores {
         System.out.printf("ABB  - Tempo: %8.3f ms/busca | Comparações: %6.2f/busca\n",
                 tempoBuscaABB, comparacoesBuscaABB);
 
-        // Testar AVL
+        //AVL
         metricas.iniciarTemporizador();
         avl.resetarContadorComparacoes();
         for (int chave : chavesBusca) {
@@ -173,7 +172,7 @@ public class AnaliseArvores {
         System.out.printf("AVL  - Tempo: %8.3f ms/busca | Comparações: %6.2f/busca\n",
                 tempoBuscaAVL, comparacoesBuscaAVL);
 
-        // Testar Rubro-Negra
+        //Rubro-Negra
         metricas.iniciarTemporizador();
         arn.resetarContadorComparacoes();
         for (int chave : chavesBusca) {
@@ -193,7 +192,7 @@ public class AnaliseArvores {
         System.out.printf("Altura ideal teórica: %.1f\n", alturaIdeal);
         System.out.println();
 
-        // Calcular balanceamento real
+        // Calcular balanceamento 
         double balanceamentoABB = (alturaIdeal / abb.altura()) * 100;
         double balanceamentoAVL = (alturaIdeal / avl.altura()) * 100;
         double balanceamentoRN = (alturaIdeal / arn.altura()) * 100;
