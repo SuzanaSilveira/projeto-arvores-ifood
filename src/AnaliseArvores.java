@@ -156,7 +156,7 @@ public class AnaliseArvores {
             abb.buscar(chave);
         }
         metricas.pararTemporizador();
-        tempoBuscaABB = (metricas.getTempoDecorridoMillis() / numBuscas) * 1000; // Converter para μs
+        tempoBuscaABB = (metricas.getTempoDecorridoMillis() / numBuscas) * 1000; // Converter para microssegundos
         comparacoesBuscaABB = abb.getContadorComparacoes() / (double) numBuscas;
         System.out.printf("ABB  - Tempo: %8.3f ms/busca | Comparações: %6.2f/busca\n",
                 tempoBuscaABB, comparacoesBuscaABB);
@@ -297,13 +297,6 @@ public class AnaliseArvores {
 
         System.out.printf("ABB:  %d min | AVL: %d min | RN: %d min\n", tempoABB, tempoAVL, tempoRN);
 
-        System.out.println("\n CONCLUSÕES FINAIS:");
-        System.out.println("──────────────────────────────────────────────────");
-        System.out.printf(" ABB:  Mais rápida na inserção (%.2f ms)\n", tempoInsercaoABB);
-        System.out.printf(" AVL:  Melhor balanceamento (%.1f%%) e busca (%.3f ms)\n",
-                (Math.floor(Math.log(restaurantes.size() + 1) / Math.log(2)) / avl.altura()) * 100,
-                tempoBuscaAVL);
-        System.out.println(" RN:   Equilíbrio entre operações");
-        System.out.printf(" Dataset iFood: Análise completa com %d registros\n", restaurantes.size());
+    
     }
 }
